@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+
+
+
+
+
+:root {
+    /* --- Brand Primary --- */
+    /* Replace your brand-red lines with these: */
+    --brand-primary: #8B5CF6;
+    /* Vivid Violet */
+    --brand-primary-hover: #7C3AED;
+    /* Deeper Purple for hover */
+
+    /* --- Backgrounds (The "Cinema" Look) --- */
+    --bg-main: #0F0F0F;
+    /* True YT Dark Mode background */
+    --bg-surface: #272727;
+    /* Cards, search bars, and hover surfaces */
+    --bg-nav: rgba(15, 15, 15, 0.95);
+    /* Semi-transparent top bar */
+
+    /* --- Typography --- */
+    --text-main: #FFFFFF;
+    /* Primary Headings */
+    --text-secondary: #AAAAAA;
+    /* Metadata (Views, dates, descriptions) */
+    --text-dim: #717171;
+    /* Disabled or minor footer links */
+
+    /* --- Borders & Accents --- */
+    --border-subtle: #3F3F3F;
+    /* Dividers between sections */
+    --accent-blue: #3EA6FF;
+    /* Action links (Subscribe/Links) */
+
+    /* --- Layout Specs --- */
+    --radius-full: 40px;
+    /* Pill-shaped buttons/inputs */
+    --radius-sm: 12px;
+    /* Video thumbnails/cards */
+    --transition: all 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-family: 'Roboto', 'Inter', sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+
+
+/* buttons root code */
+
+/* primary button */
+
+.button {
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 0.2s;
+    padding: 10px 20px;
+    border-radius: 100px;
+    background: #cfef00;
+    border: 1px solid transparent;
+    color: var(--border-subtle);
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.button:hover {
+    background: #c4e201;
+}
+
+.button>svg {
+    width: 34px;
+    margin-left: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.button:hover svg {
+    transform: translateX(5px);
+}
+
+.button:active {
+    transform: scale(0.95);
+}
+
+
+/* Secondary Button */
+
+.btn-secondary {
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+    padding: 10px 22px;
+    border-radius: 100px;
+    background: transparent;
+    border: 1.5px solid #cfef00;
+    color: #cfef00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+.btn-secondary:hover {
+    background: rgba(207, 239, 0, 0.1);
+    /* Subtle lime tint */
+    color: #ffffff;
+    /* Text pops to white */
+    border-color: #ffffff;
+    /* Border turns white */
+    box-shadow: 0 0 15px rgba(207, 239, 0, 0.2);
+}
+
+.btn-secondary>svg {
+    width: 24px;
+    /* Slightly smaller to distinguish from primary */
+    margin-left: 10px;
+    fill: currentColor;
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn-secondary:hover svg {
+    transform: rotate(15deg);
+    /* Different animation than primary for variety */
+}
+
+.btn-secondary:active {
+    transform: scale(0.96);
+    background: rgba(207, 239, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+/* text sizes root code */
+
+:root {
+    --fs-h1: 2.5rem;
+    --fs-h2: 2rem;
+    --fs-h3: 1.5rem;
+    --fs-h4: 1.25rem;
+    --fs-h5: 1.125rem;
+    --fs-h6: 1rem;
+
+    --fs-p: 1rem;
+    --fs-p-sm: 0.875rem;
+
+    --lh-heading: 1.2;
+    --lh-body: 1.6;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--text-main);
+    line-height: var(--lh-heading);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: var(--fs-h1);
+    letter-spacing: -0.02em;
+}
+
+h2 {
+    font-size: var(--fs-h2);
+    border-left: 4px solid var(--primary-orange);
+    padding-left: 15px;
+}
+
+h3 {
+    font-size: var(--fs-h3);
+}
+
+p {
+    font-size: var(--fs-p);
+    line-height: var(--lh-body);
+    color: var(--text-muted);
+    margin-bottom: 1.25rem;
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+/* header section */
+
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: var(--bg-nav);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-subtle);
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1400px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Navigation Links */
+.nav-link {
+    font-weight: 500;
+    font-size: var(--fs-h6);
+    color: var(--text-main);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--brand-primary);
+    /* Electric Violet */
+}
+
+/* Mobile Toggle - Hidden on Desktop */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    background: transparent !important;
+    /* Override your global button code */
+    border: none !important;
+    padding: 0 !important;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: var(--text-main);
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 80px;
+        right: -100%;
+        /* Hidden */
+        width: 100%;
+        height: calc(100vh - 80px);
+        background-color: var(--bg-main);
+        transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+        padding: 40px 20px;
+        overflow-y: auto;
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    /* Adjust SignUp button for mobile width */
+    .nav-list li {
+        width: 100%;
+    }
+
+    .nav-list li a.btn-primary {
+        display: inline-flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+
+}
