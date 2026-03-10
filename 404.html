@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | Creator.io</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Using your existing brand variables */
+        :root {
+            --brand-primary: #8B5CF6;
+            --bg-main: #0F0F0F;
+            --bg-surface: #272727;
+            --text-main: #FFFFFF;
+            --text-secondary: #AAAAAA;
+            --border-subtle: #3F3F3F;
+            --radius-sm: 12px;
+            --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        /* --- Background Animation --- */
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, #1a1a1a 0%, #0f0f0f 100%);
+            z-index: -1;
+        }
+
+        .glow-orb {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(139, 92, 246, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+            filter: blur(50px);
+            animation: float 10s infinite alternate;
+        }
+
+        @keyframes float {
+            from { transform: translate(-10%, -10%); }
+            to { transform: translate(10%, 10%); }
+        }
+
+        /* --- Main Content --- */
+        .error-container {
+            text-align: center;
+            padding: 20px;
+            z-index: 10;
+        }
+
+        .error-code {
+            font-size: 15rem;
+            font-weight: 900;
+            line-height: 1;
+            background: linear-gradient(180deg, var(--text-main) 30%, var(--brand-primary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: -20px;
+            position: relative;
+            animation: pulse 4s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.8; }
+            50% { transform: scale(1.05); opacity: 1; }
+        }
+
+        .error-card {
+            background: rgba(39, 39, 39, 0.6);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--border-subtle);
+            padding: 40px;
+            border-radius: 24px;
+            max-width: 500px;
+            margin: 0 auto;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: var(--text-secondary);
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        /* Using your existing button styles */
+        .btn-home {
+            display: inline-flex;
+            align-items: center;
+            padding: 14px 30px;
+            background: #cfef00; /* Your Brand Lime */
+            color: #000;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 100px;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .btn-home:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 10px 20px rgba(207, 239, 0, 0.3);
+        }
+
+        .btn-home svg {
+            width: 20px;
+            margin-right: 10px;
+        }
+
+        /* --- Mobile Adaptations (768px) --- */
+        @media (max-width: 768px) {
+            .error-code {
+                font-size: 8rem;
+            }
+            .error-card {
+                padding: 30px 20px;
+                margin: 0 15px;
+            }
+            h1 { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="stars">
+        <div class="glow-orb" style="top: 10%; left: 10%;"></div>
+        <div class="glow-orb" style="bottom: 10%; right: 10%; animation-delay: -5s;"></div>
+    </div>
+
+    <div class="error-container">
+        <div class="error-code">404</div>
+        
+        <div class="error-card">
+            <h1>Lost in the Feed?</h1>
+            <p>The page you're looking for has been moved, deleted, or never existed in this timeline.</p>
+            
+            <a href="./index.html" class="btn-home">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+                Back to Dashboard
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Interactive parallax effect
+        document.addEventListener('mousemove', (e) => {
+            const code = document.querySelector('.error-code');
+            const x = (window.innerWidth / 2 - e.pageX) / 30;
+            const y = (window.innerHeight / 2 - e.pageY) / 30;
+            
+            code.style.transform = `translateX(${x}px) translateY(${y}px)`;
+        });
+    </script>
+</body>
+</html>

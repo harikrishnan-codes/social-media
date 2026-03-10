@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media</title>
+    <link rel="icon" href="./assets/bg remove.webp">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="./root.css">
+
+    <!-- material icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- aos animations -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+
+    <!-- <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"> -->
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="contact.html"><img src="./assets/white.webp" alt="" width="150px"></a>
+            </div>
+
+            <button class="menu-toggle" id="mobile-menu-btn" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="active nav-link">Home</a></li>
+                    <li><a href="trending.html" class="nav-link">Trending</a></li>
+                    <li><a href="channel.html" class="nav-link">Channels</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+                    <li><a href="signup.html" class="button">SignUp <span class="material-icons">lock_open</span></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+
+    <main>
+
+
+        <section class="contact-hero">
+            <div class="contact-hero-container">
+
+                <div class="contact-title-area">
+                    <div class="availability-tag">
+                        <span class="pulse-dot"></span>
+                        Available for new projects
+                    </div>
+                    <h1 class="reveal-up">Let’s build <br>something <span class="text-gradient">Legendary</span>.</h1>
+                    <p class="reveal-up">Whether you have a specific project in mind or just want to say hello, my inbox
+                        is always open for innovators.</p>
+                </div>
+
+                <div class="contact-visual-area">
+                    <div class="glass-contact-card">
+                        <div class="card-row">
+                            <span class="c-label">Response Time</span>
+                            <span class="c-value">&lt; 24 Hours</span>
+                        </div>
+                        <div class="card-row">
+                            <span class="c-label">Current Location</span>
+                            <span class="c-value">Remote / Global</span>
+                        </div>
+                        <div class="card-row">
+                            <span class="c-label">Local Time</span>
+                            <span class="c-value" id="local-time">12:00 PM</span>
+                        </div>
+                    </div>
+                    <div class="hero-glow-blur"></div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+
+        <section class="comm-hub-section">
+            <div class="comm-container">
+
+                <div class="form-wrapper">
+                    <form class="contact-form" action="./404.html" method="GET">
+                        <div class="input-group">
+                            <input type="text" id="name" required placeholder=" " pattern="[A-Za-z]+" maxlength="50"
+                                oninput="this.value=this.value.replace(/[^A-Za-z]/g,'')">
+                            <label for="name">Your Full Name</label>
+                        </div>
+
+                        <div class="input-group">
+                            <input type="email" id="email" required placeholder=" ">
+                            <label for="email">Email Address</label>
+                        </div>
+
+                        <div class="input-group">
+                            <select id="subject">
+                                <option value="" disabled selected>Select Inquiry Type</option>
+                                <option value="project">New Project</option>
+                                <option value="collab">Collaboration</option>
+                                <option value="other">General Inquiry</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group">
+                            <textarea id="message" rows="5" required placeholder=" "></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+
+                        <button type="submit" class="button">
+                            Send Message
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="direct-reach">
+                    <div class="reach-card">
+                        <div class="reach-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg></div>
+                        <div class="reach-info">
+                            <span>Email me at</span>
+                            <h4>hello@creator.io</h4>
+                        </div>
+                    </div>
+
+                    <div class="reach-card">
+                        <div class="reach-icon"><svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm4.462 15.581c-.117.236-.347.448-.682.635l-.147.083c-.7.397-3.059 1.523-3.66 1.78-.602.256-1.144.372-1.626.348-.482-.024-.937-.184-1.365-.48l-.136-.096c-.428-.297-2.316-1.605-2.584-1.791-.268-.186-.492-.444-.672-.774s-.27-.68-.27-1.05v-.12c0-.37.09-.72.27-1.05s.404-.588.672-.774c.268-.186 2.156-1.494 2.584-1.791l.136-.096c.428-.296.883-.456 1.365-.48l.12-.003c.362 0 .774.038 1.236.114.462.076.888.2 1.278.372l.147.067c.335.152.565.34.69.564.125.224.188.464.188.72v.12c0 .256-.063.496-.188.72z">
+                                </path>
+                            </svg></div>
+                        <div class="reach-info">
+                            <span>Message on</span>
+                            <h4>Discord / Slack</h4>
+                        </div>
+                    </div>
+
+                    <div class="social-row">
+                        <a href="./404.html" class="social-pill">Instagram</a>
+                        <a href="./404.html" class="social-pill">X (Twitter)</a>
+                        <a href="./404.html" class="social-pill">LinkedIn</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+        <section class="map-section">
+            <div class="map-container">
+                <div class="map-visual">
+                    <div class="map-overlay-glow"></div>
+                    <img src="./assets/blog2.webp" alt="Dark Map" class="map-base">
+
+                    <div class="map-marker" style="top: 35%; left: 45%;">
+                        <div class="marker-ping"></div>
+                        <div class="marker-dot"></div>
+                    </div>
+                </div>
+
+                <div class="map-info-card">
+                    <span class="badge">Headquarters</span>
+                    <h3>Based in <br><span class="text-gradient">Berlin, Germany</span></h3>
+                    <p>Available for on-site workshops in Europe and remote collaborations worldwide.</p>
+
+                    <div class="local-details">
+                        <div class="detail-box">
+                            <span class="d-label">Weather</span>
+                            <span class="d-val">6°C Cloud-drift</span>
+                        </div>
+                        <div class="detail-box">
+                            <span class="d-label">Working Hours</span>
+                            <span class="d-val">09:00 — 18:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+        <section class="contact-faq">
+            <div class="faq-container">
+                <div class="faq-header">
+                    <span class="badge">Common Doubts</span>
+                    <h2>Frequently Asked <span class="text-gradient">Questions</span>.</h2>
+                </div>
+
+                <div class="faq-list">
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question">
+                            <h4>What is your typical project timeline?</h4>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Most UI/UX and web development projects take between 4 to 8 weeks, depending on the
+                                complexity and number of revisions required.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question">
+                            <h4>Do you work with international clients?</h4>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Absolutely. 90% of my clients are remote and based in the US, Europe, and Asia. I use
+                                Slack, Discord, and Zoom for seamless communication.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question">
+                            <h4>How do you handle project payments?</h4>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>I typically work with a 50% upfront deposit to secure the slot and 50% upon final
+                                delivery. For larger projects, we can set up monthly milestones.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <section class="trust-bar-section">
+            <div class="trust-container">
+                <div class="trust-header">
+                    <p>Trusted by industry leaders worldwide</p>
+                </div>
+
+                <div class="logo-marquee">
+                    <div class="logo-track">
+                        <div class="logo-item"><span>TECH<span class="text-gradient">FLOW</span></span></div>
+                        <div class="logo-item"><span>VIRTUA</span></div>
+                        <div class="logo-item"><span>NEXUS</span></div>
+                        <div class="logo-item"><span>CREATIVE.IO</span></div>
+                        <div class="logo-item"><span>PULSE</span></div>
+                        <div class="logo-item"><span>STARK</span></div>
+
+                        <div class="logo-item"><span>TECH<span class="text-gradient">FLOW</span></span></div>
+                        <div class="logo-item"><span>VIRTUA</span></div>
+                        <div class="logo-item"><span>NEXUS</span></div>
+                        <div class="logo-item"><span>CREATIVE.IO</span></div>
+                        <div class="logo-item"><span>PULSE</span></div>
+                        <div class="logo-item"><span>STARK</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+    </main>
+
+
+
+    <footer class="glass-footer">
+        <div class="footer-wrapper">
+            <div class="footer-cta-minimal">
+                <div class="cta-text">
+
+                    <h2>Ready to start? <span class="text-gradient">Join the 1%</span></h2>
+                    <p>Limited access to our Creator Pro tools is currently open.</p>
+                </div>
+                <div class="cta-actions">
+                    <a href="./404.html" class="button">Get Started Now</a>
+                    <a href="./404.html" class="btn-secondary">Contact Sales</a>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-main-grid">
+
+                <div class="brand-zone">
+                    <a href="contact.html">
+                        <img src="./assets/yellow.webp" alt="logo" width="150px">
+                    </a>
+                    <div class="footer-logo">CREATOR<span>.IO</span></div>
+                    <div class="social-pills">
+                        <a href="./404.html" class="pill">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="./404.html" class="pill">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="./404.html" class="pill">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="./404.html" class="pill">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="links-zone">
+                    <div class="link-col">
+                        <h4>Quick Links</h4>
+                        <a href="index.html">Home</a>
+                        <a href="trending.html">Trending</a>
+                        <a href="channel.html">Channels</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="dashboard.html">Dashboard</a>
+                        <a href="signup.html">SignUp</a>
+                    </div>
+                    <div class="link-col">
+                        <h4>Platform</h4>
+                        <a href="./404.html">Creator Pro</a>
+                        <a href="./404.html">Security</a>
+                        <a href="./404.html">Analytics</a>
+                    </div>
+                    <div class="link-col">
+                        <h4>Resources</h4>
+                        <a href="./404.html">Help Center</a>
+                        <a href="./404.html">API Docs</a>
+                        <a href="./404.html">Status</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-legal">
+                <p>&copy; 2026 Creator.io</p>
+                <div class="legal-links">
+                    <a href="./404.html">Privacy Policy</a>
+                    <a href="./404.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+    <script>
+
+        function updateTime() {
+            const timeElement = document.getElementById('local-time');
+            const now = new Date();
+            timeElement.innerText = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        }
+        setInterval(updateTime, 1000);
+        updateTime();
+
+
+
+
+
+        function toggleFaq(element) {
+            document.querySelectorAll('.faq-item').forEach(item => {
+                if (item !== element) item.classList.remove('active');
+            });
+
+            element.classList.toggle('active');
+        }
+
+
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 900,
+            easing: 'ease-in-out',
+            once: true,
+        });
+    </script>
+
+</body>
+
+</html>

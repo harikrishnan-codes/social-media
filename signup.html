@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media</title>
+    <link rel="icon" href="./assets/bg remove.webp">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="./root.css">
+
+    <!-- material icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- aos animations -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+
+    <!-- <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"> -->
+</head>
+
+<body>
+
+    <style>
+        .auth-wrapper {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: var(--bg-main);
+            padding: 20px;
+        }
+
+        .auth-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-subtle);
+            padding: 40px;
+            border-radius: 32px;
+            width: 100%;
+            max-width: 450px;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        .auth-card.hidden {
+            display: none;
+        }
+
+        .auth-subtitle {
+            color: var(--text-dim);
+            margin-bottom: 30px;
+        }
+
+        .input-group {
+            position: relative;
+            margin-bottom: 25px;
+        }
+
+        .toggle-password {
+            position: absolute;
+            right: 15px;
+            top: 18px;
+            color: var(--text-dim);
+            cursor: pointer;
+            z-index: 5;
+            transition: var(--transition);
+        }
+
+        .toggle-password:hover {
+            color: var(--brand-primary);
+        }
+
+        .error-msg {
+            font-size: 0.75rem;
+            color: #ff4d4d;
+            display: none;
+            margin-top: 5px;
+        }
+
+        .input-group.invalid input {
+            border-color: #ff4d4d;
+        }
+
+        .input-group.invalid .error-msg {
+            display: block;
+        }
+
+        .w-100 {
+            width: 100%;
+            justify-content: center;
+        }
+
+        .switch-text {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: var(--text-dim);
+        }
+
+        .switch-text a {
+            color: var(--brand-primary);
+            text-decoration: none;
+            font-weight: 700;
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+    <div class="auth-wrapper">
+        <div class="auth-card" id="login-card">
+            <h2 class="text-gradient">Welcome Back</h2>
+            <p class="auth-subtitle">Log in to your creator dashboard.</p>
+
+            <form id="login-form" onsubmit="return validateForm(event, 'login')">
+                <div class="input-group">
+                    <input type="email" id="login-email" required placeholder=" ">
+                    <label>Email Address</label>
+                    <span class="error-msg">Please enter a valid email.</span>
+                </div>
+
+                <div class="input-group">
+                    <input type="password" id="login-pass" required placeholder=" ">
+                    <label>Password</label>
+                    <i class="fas fa-eye toggle-password" onclick="togglePass('login-pass', this)"></i>
+                    <span class="error-msg">Password is required.</span>
+                </div>
+
+                <div class="auth-meta">
+                    <a href="#" onclick="showCard('forgot-card')">Forgot Password?</a>
+                </div>
+
+                <button type="submit" class="button w-100">Sign In</button>
+                <p class="switch-text">New here? <a href="#" onclick="showCard('signup-card')">Create Account</a></p>
+            </form>
+        </div>
+
+
+
+
+
+        <div class="auth-card hidden" id="signup-card">
+            <h2 class="text-gradient">Join the Elite</h2>
+            <form id="signup-form" onsubmit="return validateForm(event, 'signup')">
+                <div class="input-group">
+                    <input type="text" pattern="[A-Za-z]+" maxlength="50"
+                        oninput="this.value=this.value.replace(/[^A-Za-z]/g,'')" title="alphabets only" required>
+                    <label>Full Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="signup-email" required placeholder=" ">
+                    <label>Email</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="signup-pass" required placeholder=" ">
+                    <label>Password</label>
+                    <i class="fas fa-eye toggle-password" onclick="togglePass('signup-pass', this)"></i>
+                    <span class="error-msg">Must be at least 8 characters.</span>
+                </div>
+                <button type="submit" class="button w-100">Create Account</button>
+                <p class="switch-text">Already have an account? <a href="#" onclick="showCard('login-card')">Log In</a>
+                </p>
+            </form>
+        </div>
+
+
+
+
+
+
+        <div class="auth-card hidden" id="forgot-card">
+            <h2>Reset Password</h2>
+            <p class="auth-subtitle">We'll send a recovery link to your email.</p>
+            <form id="forgot-form" onsubmit="return validateForm(event, 'forgot')">
+                <div class="input-group">
+                    <input type="email" id="forgot-email" required placeholder=" ">
+                    <label>Email Address</label>
+                </div>
+                <button type="submit" class="button w-100">Send Link</button>
+                <p class="switch-text"><a href="#" onclick="showCard('login-card')">Back to Login</a></p>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script>
+        // 1. Toggle Password Visibility
+        function togglePass(id, icon) {
+            const input = document.getElementById(id);
+            if (input.type === "password") {
+                input.type = "text";
+                icon.classList.replace('fa-eye', 'fa-eye-slash');
+            } else {
+                input.type = "password";
+                icon.classList.replace('fa-eye-slash', 'fa-eye');
+            }
+        }
+
+        // 2. Switch Between Login/Signup/Forgot
+        function showCard(cardId) {
+            document.querySelectorAll('.auth-card').forEach(card => card.classList.add('hidden'));
+            document.getElementById(cardId).classList.remove('hidden');
+        }
+
+        // 3. Proper Validation & Redirect
+        function validateForm(event, type) {
+            event.preventDefault();
+            let isValid = true;
+
+            if (type === 'login' || type === 'signup') {
+                const pass = document.getElementById(`${type}-pass`);
+                if (pass.value.length < 8) {
+                    pass.parentElement.classList.add('invalid');
+                    isValid = false;
+                } else {
+                    pass.parentElement.classList.remove('invalid');
+                }
+            }
+
+            if (isValid) {
+                window.location.href = "404.html";
+            }
+            return false;
+        }
+    </script>
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 900,
+            easing: 'ease-in-out',
+            once: true,
+        });
+    </script>
+
+
+</body>
+
+</html>

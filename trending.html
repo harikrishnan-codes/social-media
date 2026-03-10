@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media</title>
+    <link rel="icon" href="./assets/bg remove.webp">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="trending.css">
+    <link rel="stylesheet" href="./root.css">
+
+    <!-- material icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- aos animations -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+
+    <!-- <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"> -->
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="trending.html"><img src="./assets/white.webp" alt="" width="150px"></a>
+            </div>
+
+            <button class="menu-toggle" id="mobile-menu-btn" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="active nav-link">Home</a></li>
+                    <li><a href="trending.html" class="nav-link">Trending</a></li>
+                    <li><a href="channel.html" class="nav-link">Channels</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+                    <li><a href="signup.html" class="button">SignUp <span class="material-icons">lock_open</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+
+    <main>
+
+
+        <section class="trending-hero">
+            <div class="trending-grid">
+                <div class="trending-content">
+                    <div class="live-indicator">
+                        <span class="pulse-dot"></span>
+                        LIVE UPDATES
+                    </div>
+                    <h1 class="reveal-up">What's <span class="text-gradient">Viral</span> <br>Right Now.</h1>
+                    <p class="reveal-up">The most shared, discussed, and watched content across the Creator.io network,
+                        updated every 60 seconds.</p>
+
+                    <div class="trending-tags reveal-up">
+                        <span class="tag">#DesignSystem</span>
+                        <span class="tag">#Web3</span>
+                        <span class="tag">#AI_Art</span>
+                        <span class="tag">#Minimalism</span>
+                    </div>
+                </div>
+
+                <div class="trending-visual">
+                    <div class="visual-column col-1">
+                        <div class="trending-card-sm"><img
+                                src="./assets/sign.webp">
+                        </div>
+                        <div class="trending-card-sm"><img
+                                src="./assets/about.webp">
+                        </div>
+                        <div class="trending-card-sm"><img
+                                src="./assets/meeting.webp">
+                        </div>
+                        <div class="trending-card-sm"><img
+                                src="./assets/stratergy.webp">
+                        </div>
+                        <div class="trending-card-sm"><img
+                                src="./assets/sign.webp">
+                        </div>
+                    </div>
+                    <div class="visual-column col-2">
+                        <div class="trending-card-sm"><img
+                                src="./assets/w1.webp">
+                        </div>
+                        <div class="trending-card-sm"><img
+                                src="./assets/m1.webp">
+                        </div>
+                        <div class="trending-card-sm"><img
+                                src="./assets/hero.webp">
+                        </div>
+                        <div class="trending-card-sm"><img
+                                src="./assets/hero2.webp">
+                        </div>
+                        <div class="trending-card-sm"><img
+                                src="./assets/w1.webp">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <section class="trending-feed">
+            <header class="feed-header-alt">
+                <div class="watermark-text">HOT FEED</div>
+
+                <div class="feed-header-content">
+                    <div class="header-main">
+                        <span class="badge">Real-Time</span>
+                        <h2>Global <span class="text-gradient">Activity</span>.</h2>
+                    </div>
+
+                    <div class="feed-filters">
+                        <button class="filter-btn active">Today</button>
+                        <button class="filter-btn" onclick="window.location.href='#week'">Week</button>
+                        <button class="filter-btn" onclick="window.location.href='#month'">Month</button>
+                        <div class="filter-indicator"></div>
+                    </div>
+                </div>
+            </header>
+            <div class="feed-container">
+                <div class="trending-item featured">
+                    <div class="item-visual">
+                        <img src="./assets/blog2.webp"
+                            alt="Top Trend">
+                        <div class="rank-badge">#1</div>
+                    </div>
+                    <div class="item-info">
+                        <span class="category">Digital Art</span>
+                        <h3>The Evolution of Generative Fluid Dynamics</h3>
+                        <p>Exploring how AI is reshaping the way we perceive motion in digital spaces.</p>
+                        <div class="item-stats">
+                            <span><svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                </svg> 12.5k</span>
+                            <span><svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M15 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm-9-2V7H4v3H1v2h3v3h2v-3h3v-2H6zm9 4c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                                </svg> 840</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="secondary-grid" id="week">
+                    <div class="trending-item">
+                        <div class="item-visual">
+                            <img
+                                src="./assets/blog3.webp">
+                            <div class="rank-badge">#2</div>
+                        </div>
+                        <div class="item-info-sm">
+                            <h4>Minimalist Workspace 2026</h4>
+                            <span class="category">Lifestyle</span>
+                        </div>
+                    </div>
+
+                    <div class="trending-item" id="month">
+                        <div class="item-visual">
+                            <img
+                                src="./assets/bolg4.webp">
+                            <div class="rank-badge">#3</div>
+                        </div>
+                        <div class="item-info-sm">
+                            <h4>Cyber-Security Essentials</h4>
+                            <span class="category">Tech</span>
+                        </div>
+                    </div>
+
+                    <div class="trending-item" id="month">
+                        <div class="item-visual">
+                            <img
+                                src="./assets/blog1.webp">
+                            <div class="rank-badge">#4</div>
+                        </div>
+                        <div class="item-info-sm">
+                            <h4>New UI Patterns</h4>
+                            <span class="category">Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+        <section class="rising-creators">
+            <div class="trending-head-v2">
+                <div class="head-background-text">TRENDING</div>
+
+                <div class="head-main-content">
+                    <div class="head-left">
+                        <div class="status-pill">
+                            <span class="dot"></span>
+                            REFINED TALENT
+                        </div>
+                        <h2>The New <span class="text-gradient">Elite</span>.</h2>
+                    </div>
+
+                    <div class="head-right">
+                        <div class="stat-group">
+                            <span class="stat-num">48</span>
+                            <span class="stat-label">Rising Today</span>
+                        </div>
+                        <div class="stat-group">
+                            <span class="stat-num">1.2M</span>
+                            <span class="stat-label">Total Reach</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="creators-wrapper">
+                <div class="creators-track">
+                    <div class="creator-card">
+                        <div class="avatar-wrapper">
+                            <img src="./assets/w1.webp"
+                                alt="Creator">
+                            <div class="live-tag">LIVE</div>
+                        </div>
+                        <h4>Julian Voss</h4>
+                        <p>@voss_visuals</p>
+                        <a href="./404.html" class="btn-follow">Follow</a>
+                    </div>
+
+                    <div class="creator-card">
+                        <div class="avatar-wrapper">
+                            <img src="./assets/w2.webp"
+                                alt="Creator">
+                        </div>
+                        <h4>Elena Rossi</h4>
+                        <p>@rossi_design</p>
+                        <a href="./404.html" class="btn-follow">Follow</a>
+                    </div>
+
+                    <div class="creator-card">
+                        <div class="avatar-wrapper trending-glow">
+                            <img src="./assets/m1.webp"
+                                alt="Creator">
+                        </div>
+                        <h4>Marcus Thorne</h4>
+                        <p>@m_thorne</p>
+                        <a href="./404.html" class="btn-follow">Follow</a>
+                    </div>
+
+                    <div class="creator-card">
+                        <div class="avatar-wrapper trending-glow">
+                            <img src="./assets/sign.webp" alt="image">
+                        </div>
+                        <h4>Sasha Blu</h4>
+                        <p>@blu_print</p>
+                        <a href="./404.html" class="btn-follow">Follow</a>
+                    </div>
+
+                    <div class="creator-card">
+                        <div class="avatar-wrapper trending-glow">
+                            <img src="./assets/m2-testi.webp"
+                                alt="Creator">
+                        </div>
+                        <h4>Liam K.</h4>
+                        <p>@liam_dev</p>
+                        <a href="./404.html" class="btn-follow">Follow</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+        <section class="live-pulse-section">
+            <div class="pulse-container">
+
+                <div class="topic-stack">
+                    <span class="badge">Happening Now</span>
+                    <div class="topic-item">
+                        <span class="topic-time">2 mins ago</span>
+                        <h3>New "Creator.io" interface update is trending in 14 countries.</h3>
+                        <div class="topic-meta">#DesignSystem #UX2026</div>
+                    </div>
+
+                    <div class="topic-item">
+                        <span class="topic-time">15 mins ago</span>
+                        <h3>Global artist collaboration "Project Violet" reaches 5M views.</h3>
+                        <div class="topic-meta">#DigitalArt #VioletProject</div>
+                    </div>
+
+                    <div class="topic-item">
+                        <span class="topic-time">40 mins ago</span>
+                        <h3>Upcoming AI Regulation debate scheduled for 8:00 PM UTC.</h3>
+                        <div class="topic-meta">#AIPolicy #TechNews</div>
+                    </div>
+                </div>
+
+                <div class="conversation-visual">
+                    <div class="bubble-container">
+                        <div class="bubble b-1">"The new 4K player is insane!"</div>
+                        <div class="bubble b-2">"Who else is watching the live launch?"</div>
+                        <div class="bubble b-3">"Best UI for creators so far."</div>
+                        <div class="bubble b-4">"Project Violet is mind-blowing 🤯"</div>
+                    </div>
+                    <div class="visual-glow-main"></div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+
+        <section class="kinetic-feed">
+            <div class="kinetic-container">
+                <div class="kinetic-bg-preview">
+                    <img id="bg-visual" src="./assets/about.webp"
+                        alt="Preview">
+                    <div class="visual-overlay"></div>
+                </div>
+
+                <div class="kinetic-list">
+                    <div class="kinetic-item"
+                        data-img="./assets/about.webp">
+                        <div class="item-main">
+                            <span class="item-rank">01</span>
+                            <h2>The Future of Web3 Interfaces</h2>
+                        </div>
+                        <div class="item-extra">
+                            <span class="item-stat">2.4M Views</span>
+                            <span class="item-category">Technology</span>
+                            <a href="./404.html" class="view-btn">View Post</a>
+                        </div>
+                    </div>
+
+                    <div class="kinetic-item"
+                        data-img="./assets/about.webp">
+                        <div class="item-main">
+                            <span class="item-rank">02</span>
+                            <h2>Minimalism in Modern OS</h2>
+                        </div>
+                        <div class="item-extra">
+                            <span class="item-stat">1.8M Views</span>
+                            <span class="item-category">Design</span>
+                            <a href="./404.html" class="view-btn">View Post</a>
+                        </div>
+                    </div>
+
+                    <div class="kinetic-item"
+                        data-img="./assets/about.webp">
+                        <div class="item-main">
+                            <span class="item-rank">03</span>
+                            <h2>AI Regulation & Ethics</h2>
+                        </div>
+                        <div class="item-extra">
+                            <span class="item-stat">900K Views</span>
+                            <span class="item-category">Policy</span>
+                            <a href="./404.html" class="view-btn">View Post</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+
+    
+
+    <footer class="glass-footer">
+        <div class="footer-wrapper">
+            <div class="footer-cta-minimal">
+                <div class="cta-text">
+
+                    <h2>Ready to start? <span class="text-gradient">Join the 1%</span></h2>
+                    <p>Limited access to our Creator Pro tools is currently open.</p>
+                </div>
+                <div class="cta-actions">
+                    <a href="./404.html" class="button">Get Started Now</a>
+                    <a href="./404.html" class="btn-secondary">Contact Sales</a>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-main-grid">
+
+                <div class="brand-zone">
+                    <a href="trending.html">
+                        <img src="./assets/yellow.webp" alt="logo" width="150px">
+                    </a>
+                    <div class="footer-logo">CREATOR<span>.IO</span></div>
+                    <div class="social-pills">
+                        <a href="./404.html" class="pill">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="./404.html" class="pill">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="./404.html" class="pill">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="./404.html" class="pill">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="links-zone">
+                    <div class="link-col">
+                        <h4>Quick Links</h4>
+                        <a href="index.html">Home</a>
+                        <a href="trending.html">Trending</a>
+                        <a href="channel.html">Channels</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="dashboard.html">Dashboard</a>
+                        <a href="signup.html">SignUp</a>
+                    </div>
+                    <div class="link-col">
+                        <h4>Platform</h4>
+                        <a href="./404.html">Creator Pro</a>
+                        <a href="./404.html">Security</a>
+                        <a href="./404.html">Analytics</a>
+                    </div>
+                    <div class="link-col">
+                        <h4>Resources</h4>
+                        <a href="./404.html">Help Center</a>
+                        <a href="./404.html">API Docs</a>
+                        <a href="./404.html">Status</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-legal">
+                <p>&copy; 2026 Creator.io</p>
+                <div class="legal-links">
+                    <a href="./404.html">Privacy Policy</a>
+                    <a href="./404.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const reveals = document.querySelectorAll('.reveal-up');
+            reveals.forEach((el, index) => {
+                setTimeout(() => {
+                    el.style.opacity = "1";
+                    el.style.transform = "translateY(0)";
+                }, index * 200);
+            });
+        });
+
+
+
+
+
+
+        function selectOption(element) {
+            // Remove active class from all options
+            document.querySelectorAll('.poll-option').forEach(opt => {
+                opt.classList.remove('active');
+            });
+
+            // Add active class to clicked option
+            element.classList.add('active');
+
+            // Optional: Add a small bounce effect
+            element.style.transform = "scale(0.98)";
+            setTimeout(() => {
+                element.style.transform = "scale(1)";
+            }, 100);
+        }
+
+
+
+
+
+
+        document.querySelectorAll('.kinetic-item').forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                const newImg = item.getAttribute('data-img');
+                const bgVisual = document.getElementById('bg-visual');
+
+                bgVisual.style.opacity = "0"; // Fade out current
+
+                setTimeout(() => {
+                    bgVisual.src = newImg; // Swap image
+                    bgVisual.style.opacity = "1"; // Fade in new
+                }, 300);
+            });
+        });
+
+
+
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 900,
+            easing: 'ease-in-out',
+            once: true,
+        });
+    </script>
+
+</body>
+
+</html>

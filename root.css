@@ -7,40 +7,23 @@
 
 :root {
     /* --- Brand Primary --- */
-    /* Replace your brand-red lines with these: */
-    --brand-primary: #8B5CF6;
-    /* Vivid Violet */
-    --brand-primary-hover: #7C3AED;
-    /* Deeper Purple for hover */
-
-    /* --- Backgrounds (The "Cinema" Look) --- */
-    --bg-main: #0F0F0F;
-    /* True YT Dark Mode background */
-    --bg-surface: #272727;
-    /* Cards, search bars, and hover surfaces */
-    --bg-nav: rgba(15, 15, 15, 0.95);
-    /* Semi-transparent top bar */
-
-    /* --- Typography --- */
-    --text-main: #FFFFFF;
-    /* Primary Headings */
-    --text-secondary: #AAAAAA;
-    /* Metadata (Views, dates, descriptions) */
-    --text-dim: #717171;
-    /* Disabled or minor footer links */
-
-    /* --- Borders & Accents --- */
-    --border-subtle: #3F3F3F;
-    /* Dividers between sections */
-    --accent-blue: #3EA6FF;
-    /* Action links (Subscribe/Links) */
-
-    /* --- Layout Specs --- */
-    --radius-full: 40px;
-    /* Pill-shaped buttons/inputs */
-    --radius-sm: 12px;
-    /* Video thumbnails/cards */
-    --transition: all 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+     --brand-primary: #8B5CF6;
+     --brand-primary-hover: #7C3AED;
+ 
+     --bg-main: #0F0F0F;
+     --bg-surface: #272727;
+     --bg-nav: rgba(15, 15, 15, 0.95);
+ 
+     --text-main: #FFFFFF;
+     --text-secondary: #AAAAAA;
+     --text-dim: #717171;
+ 
+     --border-subtle: #3F3F3F;
+     --accent-blue: #3EA6FF;
+ 
+     --radius-full: 40px;
+     --radius-sm: 12px;
+     --transition: all 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 
@@ -135,26 +118,21 @@ ul {
 
 .btn-secondary:hover {
     background: rgba(207, 239, 0, 0.1);
-    /* Subtle lime tint */
-    color: #ffffff;
-    /* Text pops to white */
-    border-color: #ffffff;
-    /* Border turns white */
-    box-shadow: 0 0 15px rgba(207, 239, 0, 0.2);
+     color: #ffffff;
+     border-color: #ffffff;
+     box-shadow: 0 0 15px rgba(207, 239, 0, 0.2);
 }
 
 .btn-secondary>svg {
     width: 24px;
-    /* Slightly smaller to distinguish from primary */
-    margin-left: 10px;
+     margin-left: 10px;
     fill: currentColor;
     transition: transform 0.3s ease-in-out;
 }
 
 .btn-secondary:hover svg {
     transform: rotate(15deg);
-    /* Different animation than primary for variety */
-}
+ }
 
 .btn-secondary:active {
     transform: scale(0.96);
@@ -273,8 +251,7 @@ p {
 .nav-link:hover,
 .nav-link.active {
     color: var(--brand-primary);
-    /* Electric Violet */
-}
+ }
 
 /* Mobile Toggle - Hidden on Desktop */
 .menu-toggle {
@@ -282,8 +259,7 @@ p {
     flex-direction: column;
     gap: 6px;
     background: transparent !important;
-    /* Override your global button code */
-    border: none !important;
+     border: none !important;
     padding: 0 !important;
 }
 
@@ -303,8 +279,7 @@ p {
         position: fixed;
         top: 80px;
         right: -100%;
-        /* Hidden */
-        width: 100%;
+         width: 100%;
         height: calc(100vh - 80px);
         background-color: var(--bg-main);
         transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -322,8 +297,7 @@ p {
         gap: 20px;
     }
 
-    /* Adjust SignUp button for mobile width */
-    .nav-list li {
+     .nav-list li {
         width: 100%;
     }
 
@@ -332,6 +306,176 @@ p {
         width: 100%;
         justify-content: center;
     }
+}
 
 
+
+
+
+
+
+
+
+
+/* --- Glass Footer Base --- */
+.glass-footer {
+    background-color: var(--bg-main);
+    padding: 100px 20px 40px;
+}
+
+.footer-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    background: rgba(39, 39, 39, 0.4); 
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--border-subtle);
+    border-radius: 40px;
+    padding: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* --- 1. Top CTA Section --- */
+.footer-cta-minimal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.cta-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.cta-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border-subtle), transparent);
+    margin-bottom: 60px;
+}
+
+/* --- 2. Main Grid Zone --- */
+.footer-main-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+}
+
+.footer-logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.footer-logo span { color: var(--brand-primary); }
+
+.social-pills {
+    display: flex;
+    gap: 12px;
+}
+
+.social-pills .pill {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-subtle);
+    border-radius: 50%;
+    transition: var(--transition);
+}
+
+.social-pills .pill:hover {
+    background: var(--brand-primary);
+    color: white;
+    transform: translateY(-3px);
+}
+
+.social-pills svg { width: 20px; }
+
+/* --- 3. Link Columns --- */
+.links-zone {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link-col h4 {
+    font-size: 0.9rem;
+    color: var(--text-main);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 25px;
+}
+
+.link-col a {
+    display: block;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    transition: var(--transition);
+}
+
+.link-col a:hover {
+    color: var(--brand-primary);
+    padding-left: 5px;
+}
+
+/* --- 4. Legal Bar --- */
+.footer-legal {
+    margin-top: 60px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-dim);
+    font-size: 0.85rem;
+}
+
+.legal-links {
+    display: flex;
+    gap: 30px;
+}
+
+.legal-links a:hover { color: var(--text-main); }
+
+ 
+
+@media screen and (max-width: 768px) {
+    .footer-wrapper {
+        padding: 40px 25px;
+        border-radius: 30px;
+    }
+
+    .footer-cta-minimal {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .cta-text h2 { font-size: 1.8rem; }
+
+    .footer-main-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+        text-align: center;
+    }
+
+    .social-pills { justify-content: center; }
+
+    .links-zone {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer-legal {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
 }

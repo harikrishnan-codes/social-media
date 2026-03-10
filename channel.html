@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media</title>
+    <link rel="icon" href="./assets/bg remove.webp">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="channel.css">
+    <link rel="stylesheet" href="./root.css">
+
+    <!-- material icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- aos animations -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+
+    <!-- <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"> -->
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="channel.html"><img src="./assets/white.webp" alt="" width="150px"></a>
+            </div>
+
+            <button class="menu-toggle" id="mobile-menu-btn" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="active nav-link">Home</a></li>
+                    <li><a href="trending.html" class="nav-link">Trending</a></li>
+                    <li><a href="channel.html" class="nav-link">Channels</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+                    <li><a href="signup.html" class="button">SignUp <span class="material-icons">lock_open</span></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+
+    <main>
+
+
+        <section class="channel-hero">
+            <div class="channel-banner">
+                <img src="./assets/hero2.webp" alt="Banner">
+                <div class="banner-overlay"></div>
+            </div>
+
+            <div class="channel-profile-container">
+                <div class="profile-main">
+                    <div class="profile-avatar-box">
+                        <div class="avatar-ring"></div>
+                        <img src="./assets/m1.webp" alt="Creator">
+                        <div class="verified-badge">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="profile-info">
+                        <h1 class="creator-name">Julian Voss <span class="handle">@voss_visuals</span></h1>
+                        <p class="creator-bio">Cinematographer & UI Designer. Crafting digital experiences that push the
+                            boundaries of modern interfaces.</p>
+
+                        <div class="creator-metrics">
+                            <div class="metric">
+                                <span class="m-count">1.2M</span>
+                                <span class="m-label">Followers</span>
+                            </div>
+                            <div class="metric">
+                                <span class="m-count">840</span>
+                                <span class="m-label">Creations</span>
+                            </div>
+                            <div class="metric">
+                                <span class="m-count">42.5M</span>
+                                <span class="m-label">Total Views</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profile-actions">
+                        <a href="./404.html" class="button">Follow Creator</a>
+                        <a href="./404.html" class="btn-secondary-glass"><svg viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg> Message</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+        <nav class="channel-nav">
+            <div class="nav-container">
+                <ul class="nav-tabs">
+                    <li class="tab-item active" onclick="moveIndicator(this)">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="tab-item" onclick="moveIndicator(this)">
+                        <a href="#videos">Videos</a>
+                    </li>
+                    <li class="tab-item" onclick="moveIndicator(this)">
+                        <a href="#shorts">Shorts</a>
+                    </li>
+                    <li class="tab-item" onclick="moveIndicator(this)">
+                        <a href="#live">Live</a>
+                    </li>
+                    <li class="tab-item" onclick="moveIndicator(this)">
+                        <a href="#playlists">Playlists</a>
+                    </li>
+                    <li class="tab-item" onclick="moveIndicator(this)">
+                        <a href="#community">Community</a>
+                    </li>
+                    <div class="tab-indicator"></div>
+                </ul>
+
+                <div class="nav-search">
+                    <button class="search-trigger" onclick="window.location.href='./404.html'">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+
+
+
+
+
+
+
+        <section class="featured-spotlight">
+            <div class="spotlight-wrapper">
+
+                <div class="video-container">
+                    <div class="player-aspect-ratio">
+                        <video autoplay muted loop playsinline>
+                            <source src="./assets/7514233-hd_1280_720_25fps.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="video-glow-effect"></div>
+                </div>
+
+                <div class="video-details-sidebar">
+                    <span class="badge">Featured Trailer</span>
+                    <h2 class="text-gradient">Designing the Future: <br>2026 Creative Showreel</h2>
+
+                    <p class="video-desc">
+                        A deep dive into my latest projects, from Web3 interfaces to high-end cinematography.
+                        This showreel highlights the intersection of code and art.
+                    </p>
+
+                    <div class="live-stats-bar">
+                        <div class="l-stat">
+                            <span class="l-num">840k</span>
+                            <span class="l-label">Views</span>
+                        </div>
+                        <div class="l-stat">
+                            <span class="l-num">2 days ago</span>
+                            <span class="l-label">Published</span>
+                        </div>
+                    </div>
+
+                    <div class="video-actions-row">
+                        <button class="button" onclick="window.location.href='./404.html'">Watch Full Video</button>
+                        <button class="btn-icon-glass" onclick="window.location.href='./404.html'">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+        <section class="content-archive">
+            <div class="archive-header">
+                <h3>Recent Uploads</h3>
+                <a href="./404.html" class="view-all">View All <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M9 18l6-6-6-6" />
+                    </svg></a>
+            </div>
+
+            <div class="archive-grid">
+                <div class="archive-card">
+                    <div class="archive-thumb">
+                        <img src="./assets/hero1.webp"
+                            alt="Video">
+                        <div class="duration-badge">12:40</div>
+                        <div class="archive-overlay">
+                            <div class="overlay-content">
+                                <h4>Mastering Glassmorphism in 2026</h4>
+                                <p>124k views • 2 days ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="archive-card">
+                    <div class="archive-thumb">
+                        <img src="./assets/stratergy.webp" alt="Video">
+                        <div class="duration-badge">08:15</div>
+                        <div class="archive-overlay">
+                            <div class="overlay-content">
+                                <h4>The Ethics of AI Design</h4>
+                                <p>89k views • 1 week ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="archive-card">
+                    <div class="archive-thumb">
+                        <img src="./assets/bolg4.webp"
+                            alt="Video">
+                        <div class="duration-badge">15:00</div>
+                        <div class="archive-overlay">
+                            <div class="overlay-content">
+                                <h4>Setup Tour: Minimalist 4K Workflow</h4>
+                                <p>250k views • 3 weeks ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="archive-card">
+                    <div class="archive-thumb">
+                        <img src="./assets/hero1.webp"
+                            alt="Video">
+                        <div class="duration-badge">10:30</div>
+                        <div class="archive-overlay">
+                            <div class="overlay-content">
+                                <h4>Why I Switched to Neo-Vim</h4>
+                                <p>45k views • 1 month ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+        <section class="community-section">
+            <div class="community-container">
+                <div class="community-header">
+                    <h3>Community <span class="text-gradient">Circle</span></h3>
+                    <p>Direct updates from the studio.</p>
+                </div>
+
+                <div class="feed-stack">
+                    <div class="feed-post">
+                        <div class="post-user">
+                            <img src="./assets/w2.webp"
+                                alt="User">
+                            <div class="u-info">
+                                <span class="u-name">Julian Voss</span>
+                                <span class="u-time">5 hours ago</span>
+                            </div>
+                        </div>
+
+                        <div class="post-content">
+                            <p>Just finished filming the next UI masterclass. We’re diving deep into
+                                <strong>Neo-Brutalism</strong> and how it's evolving in 2026. Can't wait to show you
+                                all!
+                            </p>
+                            <div class="post-visual">
+                                <img src="./assets/1.webp"
+                                    alt="BTS">
+                            </div>
+                        </div>
+
+                        <div class="post-actions">
+                            <button class="action-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3" />
+                                </svg> 1.2k</button>
+                            <button class="action-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                                </svg> 84</button>
+                            <button class="action-btn share-btn"><svg viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />
+                                    <polyline points="16 6 12 2 8 6" />
+                                    <line x1="12" y1="2" x2="12" y2="15" />
+                                </svg></button>
+                        </div>
+                    </div>
+
+                    <div class="feed-post">
+                        <div class="post-user">
+                            <img src="./assets/m2-testi.webp"
+                                alt="User">
+                            <div class="u-info">
+                                <span class="u-name">Julian Voss</span>
+                                <span class="u-time">Yesterday</span>
+                            </div>
+                        </div>
+
+                        <div class="post-content">
+                            <p>Which topic should I cover next Tuesday?</p>
+                            <div class="post-poll">
+                                <div class="poll-row active">
+                                    <span>Advanced CSS Grid Mastery</span>
+                                    <span class="p-val">68%</span>
+                                </div>
+                                <div class="poll-row">
+                                    <span>Figma to Code Workflow</span>
+                                    <span class="p-val">32%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+        <section class="toolkit-section">
+            <div class="toolkit-container">
+                <div class="toolkit-header">
+                    <span class="badge">The Gear</span>
+                    <h2>My <span class="text-gradient">Studio Setup</span>.</h2>
+                </div>
+
+                <div class="bento-grid">
+                    <div class="bento-card bento-lg">
+                        <div class="bento-content">
+                            <h3>Workstation 2026</h3>
+                            <p>Mac Studio M4 Ultra • 128GB RAM • 8TB SSD</p>
+                        </div>
+                        <img src="./assets/blog1.webp"
+                            alt="Setup">
+                    </div>
+
+                    <div class="bento-card bento-md">
+                        <div class="bento-content">
+                            <h3>Main Stack</h3>
+                            <div class="stack-icons">
+                                <span class="s-tag">VS Code</span>
+                                <span class="s-tag">Figma</span>
+                                <span class="s-tag">After Effects</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bento-card bento-sm">
+                        <div class="bento-content">
+                            <span class="b-label">Camera</span>
+                            <h4>Sony A7S III</h4>
+                        </div>
+                    </div>
+
+                    <div class="bento-card bento-sm">
+                        <div class="bento-content">
+                            <span class="b-label">Audio</span>
+                            <h4>Shure SM7B</h4>
+                        </div>
+                    </div>
+
+                    <div class="bento-card bento-cta">
+                        <div class="bento-content">
+                            <h3>Get My Assets</h3>
+                            <p>Weekly UI kits & presets.</p>
+                            <button class="btn-small" onclick="window.location.href='./404.html'">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+
+
+    <footer class="glass-footer">
+        <div class="footer-wrapper">
+            <div class="footer-cta-minimal">
+                <div class="cta-text">
+
+                    <h2>Ready to start? <span class="text-gradient">Join the 1%</span></h2>
+                    <p>Limited access to our Creator Pro tools is currently open.</p>
+                </div>
+                <div class="cta-actions">
+                    <a href="./404.html" class="button">Get Started Now</a>
+                    <a href="./404.html" class="btn-secondary">Contact Sales</a>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-main-grid">
+
+                <div class="brand-zone">
+                    <a href="channel.html">
+                        <img src="./assets/yellow.webp" alt="logo" width="150px">
+                    </a>
+                    <div class="footer-logo">CREATOR<span>.IO</span></div>
+                    <div class="social-pills">
+                        <a href="./404.html" class="pill">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="./404.html" class="pill">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="./404.html" class="pill">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="./404.html" class="pill">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="links-zone">
+                    <div class="link-col">
+                        <h4>Quick Links</h4>
+                        <a href="index.html">Home</a>
+                        <a href="trending.html">Trending</a>
+                        <a href="channel.html">Channels</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="dashboard.html">Dashboard</a>
+                        <a href="signup.html">SignUp</a>
+                    </div>
+                    <div class="link-col">
+                        <h4>Platform</h4>
+                        <a href="./404.html">Creator Pro</a>
+                        <a href="./404.html">Security</a>
+                        <a href="./404.html">Analytics</a>
+                    </div>
+                    <div class="link-col">
+                        <h4>Resources</h4>
+                        <a href="./404.html">Help Center</a>
+                        <a href="./404.html">API Docs</a>
+                        <a href="./404.html">Status</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-legal">
+                <p>&copy; 2026 Creator.io</p>
+                <div class="legal-links">
+                    <a href="./404.html">Privacy Policy</a>
+                    <a href="./404.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+    <script>
+
+
+        function moveIndicator(element) {
+            const tabs = document.querySelectorAll('.tab-item');
+            const indicator = document.querySelector('.tab-indicator');
+
+             tabs.forEach(tab => tab.classList.remove('active'));
+
+             element.classList.add('active');
+
+             const rect = element.getBoundingClientRect();
+            const parentRect = element.parentElement.getBoundingClientRect();
+
+             const textWidth = element.querySelector('a').offsetWidth;
+
+            indicator.style.width = `${textWidth}px`;
+            indicator.style.left = `${element.offsetLeft + (rect.width - textWidth) / 2}px`;
+        }
+
+         window.onload = () => {
+            const activeTab = document.querySelector('.tab-item.active');
+            if (activeTab) moveIndicator(activeTab);
+        };
+
+        
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 900,
+            easing: 'ease-in-out',
+            once: true,
+        });
+    </script>
+
+</body>
+
+</html>
