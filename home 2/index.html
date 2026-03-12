@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Social Media</title>
-    <link rel="icon" href="./assets/bg remove.webp">
+    <link rel="icon" href="../assets/bg remove.webp">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
@@ -19,27 +19,32 @@
     <!-- aos animations -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
-
-    <!-- <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
-        rel="stylesheet"> -->
-
 </head>
 
 <body>
     <header class="main-header">
         <div class="header-container">
-            <a href="#" class="logo">
-                <span class="logo-icon"></span>
-                CYBER<span class="text-gradient">VELOCITY</span>
+            <a href="index.html" class="logo">
+                <img src="../assets/pink.webp" alt="logo" width="150px">
             </a>
 
-            <nav class="desktop-nav">
-                <a href="#features" class="nav-link">Features</a>
-                <a href="#trending" class="nav-link">Trending</a>
-                <a href="#creators" class="nav-link">Creators</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#" class="btn-primary-sm">Get Started</a>
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="dropdown">
+                        <div class="home-link">
+                            <a href="index.html" class="active nav-link">Home</a>
+                            <span class="material-icons dropdown-arrow">arrow_drop_down</span>
+                        </div>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="../index.html">Home Style 1</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="feed.html" class="nav-link">Feed</a></li>
+                    <li><a href="post.html" class="nav-link">Popular Posts</a></li>
+                    <li><a href="explore.html" class="nav-link">Explore</a></li>
+                    <li><a href="contact.html" class="btn-primary">Contact</a></li>
+                </ul>
             </nav>
 
             <button class="hamburger" id="menu-trigger" aria-label="Toggle Menu">
@@ -50,19 +55,585 @@
         </div>
     </header>
 
-    <div class="mobile-overlay" id="mobile-menu">
-        <div class="mobile-menu-inner">
-            <nav class="mobile-links">
-                <a href="#features" class="m-link">Features</a>
-                <a href="#trending" class="m-link">Trending</a>
-                <a href="#creators" class="m-link">Creators</a>
-                <a href="#about" class="m-link">About</a>
-                <div class="m-auth">
-                    <a href="#" class="btn-primary-lg">Join the Network</a>
+
+    <main>
+
+
+
+        <section class="social-hero" id="parallax-scene">
+            <div class="hero-container">
+
+                <div class="hero-text">
+                    <div class="social-badge">
+                        <i class="fas fa-share-alt"></i> Trending in Design
+                    </div>
+                    <h1>Your Influence, <br><span class="text-gradient-rose">Beautifully Amplified.</span></h1>
+                    <p>The first creator platform that combines aesthetic minimalism with aggressive social growth
+                        tools. Build your legacy in soft focus.</p>
+
+                    <div class="hero-actions">
+                        <a href="./404.html" class="btn-primary-v3">Start Trending</a>
+                        <div class="user-stack">
+                            <div class="avatars">
+                                <img src="../assets/hero.webp" alt="u1" width="100px">
+                                <img src="../assets/hero1.webp" alt="u2" width="100px">
+                                <img src="../assets/hero2.webp" alt="u3" width="100px">
+                            </div>
+                            <span>+2.4k joined today</span>
+                        </div>
+                    </div>
                 </div>
-            </nav>
+
+                <div class="hero-canvas">
+                    <div class="float-card card-1" data-depth="0.2">
+                        <div class="card-icon pink"><i class="fas fa-heart"></i></div>
+                        <div class="card-info">
+                            <strong>1.2k Likes</strong>
+                            <span>New post viral</span>
+                        </div>
+                    </div>
+
+                    <div class="float-card card-2" data-depth="0.5">
+                        <div class="card-icon blue"><i class="fas fa-user-plus"></i></div>
+                        <div class="card-info">
+                            <strong>+450 Followers</strong>
+                            <span>Organic growth</span>
+                        </div>
+                    </div>
+
+                    <div class="main-device-frame" data-depth="0.1">
+                        <div class="inner-feed">
+                            <div class="skeleton-post"></div>
+                            <div class="skeleton-post"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+
+        <section class="metrics-section">
+            <div class="metrics-container">
+                <div class="metrics-header">
+                    <span class="badge-v3">Live Ecosystem</span>
+                    <h2>Measure what <span class="text-rose">matters.</span></h2>
+                </div>
+
+                <div class="bento-metrics">
+                    <div class="bento-item bento-lg">
+                        <div class="bento-content">
+                            <span class="b-label">Audience Velocity</span>
+                            <h3>+24.8% <small>this week</small></h3>
+                            <div class="mini-chart-visual">
+                                <div class="bar" style="height: 40%"></div>
+                                <div class="bar" style="height: 60%"></div>
+                                <div class="bar" style="height: 50%"></div>
+                                <div class="bar" style="height: 90%"></div>
+                                <div class="bar" style="height: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bento-item bento-sm">
+                        <div class="bento-content">
+                            <i class="fas fa-fire-alt b-icon"></i>
+                            <span class="b-val">8.2%</span>
+                            <p>Avg. Engagement</p>
+                        </div>
+                    </div>
+
+                    <div class="bento-item bento-sm">
+                        <div class="bento-content">
+                            <i class="fas fa-globe-americas b-icon"></i>
+                            <span class="b-val">142</span>
+                            <p>Countries Reached</p>
+                        </div>
+                    </div>
+
+                    <div class="bento-item bento-md">
+                        <div class="bento-content flex-row">
+                            <div>
+                                <span class="b-label">Viral Pulse</span>
+                                <h3>Extreme</h3>
+                            </div>
+                            <div class="pulse-indicator">
+                                <div class="double-pulse"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+        <section class="live-feed-section">
+            <div class="feed-container">
+
+                <div class="feed-info">
+                    <span class="live-indicator"><span class="dot-ping"></span> Live Now</span>
+                    <h2>See the <span class="text-rose">Pulse</span> of the Community.</h2>
+                    <p>Real-time interaction from the world's most aesthetic creators. Join the stream and start sharing
+                        your story.</p>
+                    <div class="feed-stats">
+                        <div class="f-stat"><strong>1.2M</strong><span>Posts Today</span></div>
+                        <div class="f-stat"><strong>450k</strong><span>Live Users</span></div>
+                    </div>
+                </div>
+
+                <div class="scrolling-wall">
+                    <div class="wall-column col-1">
+                        <div class="social-post"><img src="../assets/feed 1.webp" alt="Fashion">
+                        </div>
+                        <div class="social-post"><img src="../assets/feed 3.webp" alt="Style">
+                        </div>
+                        <div class="social-post"><img src="../assets/feed 5.webp" alt="Model">
+                        </div>
+                        <div class="social-post"><img src="../assets/feed 7.webp" alt="Fashion">
+                        </div>
+                    </div>
+
+                    <div class="wall-column col-2">
+                        <div class="social-post"><img src="../assets/feed 2.webp" alt="Urban">
+                        </div>
+                        <div class="social-post"><img src="../assets/feed 4.webp" alt="Portrait">
+                        </div>
+                        <div class="social-post"><img src="../assets/feed 6.webp" alt="Street">
+                        </div>
+                        <div class="social-post"><img src="../assets/feed 8.webp" alt="Urban">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+        <section class="verification-section">
+            <div class="verify-container">
+
+                <div class="verify-content">
+                    <span class="badge-v4">The Elite Standard</span>
+                    <h2>Be the <span class="text-rose">Signature</span> of your niche.</h2>
+                    <p>Unlock the Blossom Checkmark. Gain access to advanced algorithms, priority reach, and a bespoke
+                        profile aesthetic that separates you from the crowd.</p>
+
+                    <ul class="benefit-list">
+                        <li><i class="fas fa-check-circle"></i> Priority Feed Placement</li>
+                        <li><i class="fas fa-check-circle"></i> Exclusive Rose Themes</li>
+                        <li><i class="fas fa-check-circle"></i> Direct Monetization Tools</li>
+                    </ul>
+
+                    <a href="./404.html" class="btn-primary">Apply for Verification</a>
+                </div>
+
+                <div class="verify-visual">
+                    <div class="profile-glass-card">
+                        <div class="card-glow"></div>
+                        <div class="p-header">
+                            <div class="p-avatar">
+                                <img src="../assets/w1.webp" alt="Creator">
+                                <div class="verified-badge">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </div>
+                            <div class="p-info">
+                                <strong>Julian Voss</strong>
+                                <span>@julian_creative</span>
+                            </div>
+                        </div>
+                        <div class="p-stats-row">
+                            <div class="s-item"><strong>420k</strong><span>Reach</span></div>
+                            <div class="s-item"><strong>12.4%</strong><span>Engage</span></div>
+                        </div>
+                        <div class="p-action-bar">
+                            <div class="skeleton-btn"></div>
+                            <div class="skeleton-btn secondary"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <section class="reveal-section">
+            <div class="reveal-container">
+
+                <div class="reveal-nav">
+                    <span class="badge-v4">The Toolkit</span>
+                    <h2>Built for <span class="text-rose">Impact.</span></h2>
+
+                    <div class="reveal-items">
+                        <div class="reveal-item active" data-target="feat-1">
+                            <span class="reveal-num">01</span>
+                            <div class="reveal-content">
+                                <h3>Smart Scheduling</h3>
+                                <p>Post when your audience is most active using AI-driven heatmaps.</p>
+                            </div>
+                        </div>
+
+                        <div class="reveal-item" data-target="feat-2">
+                            <span class="reveal-num">02</span>
+                            <div class="reveal-content">
+                                <h3>Aesthetic Filters</h3>
+                                <p>One-tap presets designed to match your blossom-themed feed.</p>
+                            </div>
+                        </div>
+
+                        <div class="reveal-item" data-target="feat-3">
+                            <span class="reveal-num">03</span>
+                            <div class="reveal-content">
+                                <h3>Monetization Hub</h3>
+                                <p>Turn your engagement into revenue with integrated tip jars.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reveal-visual-box">
+                    <div class="morph-card" id="morph-display">
+                        <div class="morph-inner">
+                            <i class="fas fa-calendar-alt" id="morph-icon"></i>
+                            <div class="morph-glare"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+        <section class="cta-final-section">
+            <div class="ticker-wrap">
+                <div class="ticker-track">
+                    <span>#BLOSSOMVIRAL</span><span>#CREATORMODE</span><span>#DESIGNER</span>
+                    <span>#SOCIALVELOCITY</span><span>#AESTHETIC</span><span>#TRENDING</span>
+                    <span>#BLOSSOMVIRAL</span><span>#CREATORMODE</span><span>#DESIGNER</span>
+                    <span>#SOCIALVELOCITY</span><span>#AESTHETIC</span><span>#TRENDING</span>
+                </div>
+            </div>
+
+            <div class="cta-content">
+                <div class="cta-glass-sphere">
+                    <span class="cta-subtitle">The Future is Pink</span>
+                    <h2>Ready to define <br>your <span class="text-rose">Legacy?</span></h2>
+                    <p>Join 250,000+ creators who have already switched to the most aesthetic social ecosystem on the
+                        web.</p>
+
+                    <div class="magnetic-wrap">
+                        <a href="./404.html" class="btn-magnetic" id="magnetic-btn">
+                            <span>Join the Network</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mesh-glow"></div>
+        </section>
+
+
+
+
+
+
+
+
+        <section class="roadmap-section">
+            <div class="roadmap-container">
+                <div class="roadmap-intro">
+                    <span class="badge-v6">The Journey</span>
+                    <h2>Your path to <span class="text-rose">Influence.</span></h2>
+                </div>
+
+                <div class="roadmap-steps">
+                    <div class="step-card reveal-left">
+                        <div class="step-num">01</div>
+                        <div class="step-body">
+                            <h3>Curate Your Space</h3>
+                            <p>Set up your boutique profile with custom blossom-themed palettes and verified status.</p>
+                        </div>
+                    </div>
+
+                    <div class="step-card reveal-right">
+                        <div class="step-num">02</div>
+                        <div class="step-body">
+                            <h3>Sync Your Feed</h3>
+                            <p>Connect your existing social accounts and let our AI optimize your aesthetic flow.</p>
+                        </div>
+                    </div>
+
+                    <div class="step-card reveal-left">
+                        <div class="step-num">03</div>
+                        <div class="step-body">
+                            <h3>Go Global</h3>
+                            <p>Push your content to the trending pulse and watch your community grow in real-time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <div class="filter-backdrop" id="filter-backdrop"></div>
+
+        <aside class="filter-drawer" id="filter-drawer">
+            <div class="drawer-inner">
+                <div class="drawer-header">
+                    <h3>Refine Discovery</h3>
+                    <button class="btn-close-drawer" id="close-filter"><i class="fas fa-times"></i></button>
+                </div>
+
+                <div class="filter-group">
+                    <span class="f-label">Aesthetic Vibe</span>
+                    <div class="chip-grid">
+                        <button class="f-chip active" onclick="window.location.href='./404.html'">All Vibes</button>
+                        <button class="f-chip" onclick="window.location.href='./404.html'">Minimal</button>
+                        <button class="f-chip" onclick="window.location.href='./404.html'">Vintage</button>
+                        <button class="f-chip" onclick="window.location.href='./404.html'">Cyber</button>
+                        <button class="f-chip" onclick="window.location.href='./404.html'">Organic</button>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <span class="f-label">Color Palette</span>
+                    <div class="color-row">
+                        <div class="color-circle" style="background: #FFE1E3;" title="Blossom"></div>
+                        <div class="color-circle" style="background: #22D3EE;" title="Cyber"></div>
+                        <div class="color-circle" style="background: #000000;" title="Noir"></div>
+                        <div class="color-circle" style="background: #FFFFFF; border: 1px solid #ddd;" title="Clean">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <span class="f-label">Content Type</span>
+                    <div class="check-list">
+                        <label class="f-check"><input type="checkbox" checked> <span>Photography</span></label>
+                        <label class="f-check"><input type="checkbox"> <span>Cinematics</span></label>
+                        <label class="f-check"><input type="checkbox"> <span>Digital Assets</span></label>
+                    </div>
+                </div>
+
+                <button class="btn-apply-filters" onclick="window.location.href='./404.html'">Apply Discovery</button>
+            </div>
+        </aside>
+
+        <button class="btn-filter-trigger" id="open-filter">
+            <i class="fas fa-sliders-h"></i> <span>Filters</span>
+        </button>
+
+
+
+
+
+        <section class="testimonial-section">
+            <div class="testi-container">
+                <div class="testi-header">
+                    <span class="badge-v8">Community Voice</span>
+                    <h2>Loved by <span class="text-rose">Visionaries.</span></h2>
+                </div>
+
+                <div class="testi-wrapper" id="testi-scroll">
+                    <div class="testi-card">
+                        <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+                        <p>"The aesthetic control on Blossom is unmatched. My engagement tripled the moment I switched
+                            my feed to this layout."</p>
+                        <div class="testi-user">
+                            <img src="../assets/w3.webp" alt="User">
+                            <div class="u-info">
+                                <strong>Elena Rose <i class="fas fa-check-circle"></i></strong>
+                                <span>Fashion Architect</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testi-card">
+                        <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+                        <p>"Finally, a platform that respects the artist. The monetization tools are seamless and the
+                            community is incredibly supportive."</p>
+                        <div class="testi-user">
+                            <img src="../assets/m2.webp" alt="User">
+                            <div class="u-info">
+                                <strong>Marcus V. <i class="fas fa-check-circle"></i></strong>
+                                <span>Digital Nomad</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testi-card">
+                        <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+                        <p>"I’ve never felt more in tune with my audience. The real-time heatmaps changed the way I
+                            schedule my daily content."</p>
+                        <div class="testi-user">
+                            <img src="../assets/w4.webp" alt="User">
+                            <div class="u-info">
+                                <strong>Sarah Chen <i class="fas fa-check-circle"></i></strong>
+                                <span>Lifestyle Curator</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testi-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+        <section class="faq-section">
+            <div class="faq-container">
+                <div class="faq-header">
+                    <span class="badge-v7">Support Hub</span>
+                    <h2>Common <span class="text-rose">Questions.</span></h2>
+                    <p>Everything you need to know about the Blossom ecosystem.</p>
+                </div>
+
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <button class="faq-trigger">
+                            <span>How do I qualify for the Blossom Checkmark?</span>
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="faq-content">
+                            <p>Verification is based on identity authenticity and content quality rather than just
+                                follower count. You can apply directly through your dashboard once your profile is 100%
+                                complete.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-trigger">
+                            <span>Can I monetize my posts immediately?</span>
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="faq-content">
+                            <p>Yes! Our "Tip Jar" and "Boutique Subscriptions" are available to all creators from day
+                                one, with no minimum follower requirement to start earning.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-trigger">
+                            <span>Is my data encrypted and private?</span>
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="faq-content">
+                            <p>We use enterprise-grade end-to-end encryption. Your data is your property, and we never
+                                sell creator information to third-party advertisers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+    </main>
+
+
+
+
+
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="f-logo">
+                    <img src="../assets/white.webp" alt="logo" width="150px">
+                </a>
+                <p>Redefining digital influence through minimalist aesthetics and powerful social tools.</p>
+                <form class="newsletter-box" action="./404.html" method="GET">
+                    <input type="email" placeholder="Get weekly trends..." required>
+                    <button aria-label="Subscribe"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+
+            <div class="footer-links">
+                <div class="link-col">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="feed.html">Feed</a>
+                    <a href="post.html">Popular Posts</a>
+                    <a href="explore.html">Explore</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="link-col">
+                    <h4>Platform</h4>
+                    <a href="./404.html">Feed</a>
+                    <a href="./404.html">Trending</a>
+                    <a href="./404.html">Analytics</a>
+                    <a href="./404.html">Verification</a>
+                </div>
+                <div class="link-col">
+                    <h4>Company</h4>
+                    <a href="./404.html">About Us</a>
+                    <a href="./404.html">Careers</a>
+                    <a href="./404.html">Privacy</a>
+                    <a href="./404.html">Terms</a>
+                </div>
+                <div class="link-col">
+                    <h4>Social</h4>
+                    <div class="social-grid">
+                        <a href="./404.html" class="social-btn"><i class="fab fa-instagram"></i></a>
+                        <a href="./404.html" class="social-btn"><i class="fab fa-twitter"></i></a>
+                        <a href="./404.html" class="social-btn"><i class="fab fa-tiktok"></i></a>
+                        <a href="./404.html" class="social-btn"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Blossom Studio. Built for the next generation of creators.</p>
+        </div>
+    </footer>
+
+
+
+
 
 
 

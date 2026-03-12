@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media</title>
+    <link rel="icon" href="../assets/bg remove.webp">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="feed.css">
+    <link rel="stylesheet" href="./root.css">
+
+    <!-- material icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- aos animations -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <header class="main-header">
+        <div class="header-container">
+            <a href="feed.html" class="logo">
+                <img src="../assets/pink.webp" alt="logo" width="150px">
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="feed.html" class="nav-link">Feed</a></li>
+                    <li><a href="post.html" class="nav-link">Popular Posts</a></li>
+                    <li><a href="explore.html" class="nav-link">Explore</a></li>
+                    <li><a href="contact.html" class="btn-primary">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="hamburger" id="menu-trigger" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+
+
+
+    <main>
+        <section class="feed-hero">
+            <div class="feed-hero-container">
+
+                <div class="feed-welcome">
+                    <div class="date-badge">Wednesday, March 11</div>
+                    <h1>Good Morning, <span class="text-rose">Julian.</span></h1>
+                    <p>Your community has been busy. There are <strong>12 new posts</strong> from your favorite
+                        creators.</p>
+
+                    <div class="search-bar-glass">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search creators, tags, or moods...">
+                    </div>
+                </div>
+
+                <div class="stories-showcase">
+                    <div class="story-item active">
+                        <div class="story-circle"><img src="../assets/m1.webp"></div>
+                        <span>Your Story</span>
+                    </div>
+                    <div class="story-item live">
+                        <div class="story-circle"><img src="../assets/w1.webp"></div>
+                        <span>Elena_R</span>
+                    </div>
+                    <div class="story-item">
+                        <div class="story-circle"><img src="../assets/m2.webp"></div>
+                        <span>Marcus_V</span>
+                    </div>
+                    <div class="story-item">
+                        <div class="story-circle"><img src="../assets/w2.webp"></div>
+                        <span>Sarah_C</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+
+        <section class="main-feed-section">
+            <div class="feed-grid">
+
+                <article class="post-card">
+                    <div class="post-header">
+                        <div class="post-user">
+                            <img src="../assets/w3" alt="Avatar">
+                            <div class="u-meta">
+                                <strong>Sophia Chen <i class="fas fa-check-circle"></i></strong>
+                                <span>2 hours ago</span>
+                            </div>
+                        </div>
+                        <button class="post-more"><i class="fas fa-ellipsis-h"></i></button>
+                    </div>
+
+                    <div class="post-content">
+                        <img src="../assets/w1.webp" alt="Feed Image">
+                        <div class="post-overlay">
+                            <p>Spring collection moodboard. ✨ #Aesthetic #Blossom</p>
+                        </div>
+                    </div>
+
+                    <div class="post-actions">
+                        <div class="action-left">
+                            <button class="action-btn heart" onclick="window.location.href='./404.html'"><i
+                                    class="far fa-heart"></i> <span>1.2k</span></button>
+                            <button class="action-btn" onclick="window.location.href='./404.html'"><i
+                                    class="far fa-comment"></i> <span>84</span></button>
+                            <button class="action-btn" onclick="window.location.href='./404.html'"><i
+                                    class="far fa-paper-plane"></i></button>
+                        </div>
+                        <button class="action-btn bookmark" onclick="window.location.href='./404.html'"><i
+                                class="far fa-bookmark"></i></button>
+                    </div>
+                </article>
+
+                <article class="post-card">
+                    <div class="post-header">
+                        <div class="post-user">
+                            <img src="../assets/m2-testi.webp" alt="Avatar">
+                            <div class="u-meta">
+                                <strong>Liam Vance <i class="fas fa-check-circle"></i></strong>
+                                <span>5 hours ago</span>
+                            </div>
+                        </div>
+                        <button class="post-more" onclick="window.location.href='./404.html'"><i
+                                class="fas fa-ellipsis-h"></i></button>
+                    </div>
+
+                    <div class="post-content">
+                        <img src="../assets/urban.webp" alt="Feed Image">
+                        <div class="post-overlay">
+                            <p>Urban echoes in the heart of the city.</p>
+                        </div>
+                    </div>
+
+                    <div class="post-actions">
+                        <div class="action-left">
+                            <button class="action-btn heart" onclick="window.location.href='./404.html'"><i
+                                    class="far fa-heart"></i> <span>3.4k</span></button>
+                            <button class="action-btn" onclick="window.location.href='./404.html'"><i
+                                    class="far fa-comment"></i> <span>120</span></button>
+                            <button class="action-btn" onclick="window.location.href='./404.html'"><i
+                                    class="far fa-paper-plane"></i></button>
+                        </div>
+                        <button class="action-btn bookmark" onclick="window.location.href='./404.html'"><i
+                                class="far fa-bookmark"></i></button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+
+
+
+
+        <section class="aura-gallery">
+            <div class="gallery-header">
+                <span class="aura-label">Curated Feed</span>
+                <h2>Trending <span class="italic-serif">Aesthetics</span></h2>
+            </div>
+
+            <div class="mosaic-container">
+                <div class="mosaic-item lg">
+                    <div class="mosaic-glass">
+                        <img src="../assets/w3.webp" alt="Fashion">
+                        <div class="mosaic-info">
+                            <div class="creator-tag">@elena_rose</div>
+                            <h3>Silk & Shadows</h3>
+                            <div class="stats-pills">
+                                <span><i class="far fa-heart"></i> 2.4k</span>
+                                <span><i class="far fa-comment"></i> 112</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mosaic-item md">
+                    <div class="mosaic-glass">
+                        <img src="../assets/15.webp" alt="Urban">
+                        <div class="mosaic-info">
+                            <div class="creator-tag">@city_echo</div>
+                            <h3>Concrete Softness</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mosaic-item sm">
+                    <div class="mosaic-glass">
+                        <img src="../assets/m1.webp" alt="Portrait">
+                        <div class="mosaic-info">
+                            <div class="creator-tag">@marcus_v</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+        <section class="spotlight-section">
+            <div class="spotlight-container">
+                <div class="spotlight-header">
+                    <span class="badge-premium">Weekly Choice</span>
+                    <h2>Creators in <span class="italic-serif">Focus</span></h2>
+                </div>
+
+                <div class="spotlight-orbit">
+                    <div class="spotlight-card active">
+                        <div class="orbit-visual">
+                            <img src="../assets/f1-testi.webp" alt="Creator">
+                            <div class="orbit-ring"></div>
+                        </div>
+                        <div class="orbit-content">
+                            <h3>Aria Vane</h3>
+                            <p>Minimalist Interior Design</p>
+                            <a href="./404.html" class="btn-profile-link">View Portfolio</a>
+                        </div>
+                    </div>
+
+                    <div class="spotlight-card">
+                        <div class="orbit-visual">
+                            <img src="../assets/m3-testi.webp" alt="Creator">
+                            <div class="orbit-ring"></div>
+                        </div>
+                        <div class="orbit-content">
+                            <h3>Leo Thorne</h3>
+                            <p>Cinematic Street Photography</p>
+                            <a href="./404.html" class="btn-profile-link">View Portfolio</a>
+                        </div>
+                    </div>
+
+                    <div class="spotlight-card">
+                        <div class="orbit-visual">
+                            <img src="../assets/f3-testi.webp" alt="Creator">
+                            <div class="orbit-ring"></div>
+                        </div>
+                        <div class="orbit-content">
+                            <h3>Sienna Bell</h3>
+                            <p>Aesthetic Fashion Editorial</p>
+                            <a href="./404.html" class="btn-profile-link">View Portfolio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <section class="mood-section">
+            <div class="mood-container">
+                <div class="mood-header">
+                    <span class="badge-premium">Explore by Vibe</span>
+                    <h2>Find your <span class="italic-serif">Aura</span></h2>
+                </div>
+
+                <div class="mood-grid">
+                    <div class="mood-card" data-color="rgba(255, 94, 126, 0.2)">
+                        <div class="mood-img">
+                            <img src="../assets/feed 1.webp" alt="Minimal">
+                        </div>
+                        <div class="mood-label">
+                            <h3>Minimal</h3>
+                            <span>1.4k Posts</span>
+                        </div>
+                    </div>
+
+                    <div class="mood-card" data-color="rgba(124, 58, 237, 0.2)">
+                        <div class="mood-img">
+                            <img src="../assets/feed 2.webp" alt="Organic">
+                        </div>
+                        <div class="mood-label">
+                            <h3>Organic</h3>
+                            <span>890 Posts</span>
+                        </div>
+                    </div>
+
+                    <div class="mood-card" data-color="rgba(34, 211, 238, 0.2)">
+                        <div class="mood-img">
+                            <img src="../assets/feed 4.webp" alt="Cyber">
+                        </div>
+                        <div class="mood-label">
+                            <h3>Digital</h3>
+                            <span>2.1k Posts</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ambient-glow" id="ambient-glow"></div>
+        </section>
+
+
+
+
+
+
+
+
+        <section class="asset-shop-section">
+            <div class="shop-container">
+                <div class="shop-header">
+                    <span class="badge-premium">Creator Boutique</span>
+                    <h2>Shop the <span class="italic-serif">Aesthetic.</span></h2>
+                    <p>Premium presets, brushes, and assets curated by top-tier creators.</p>
+                </div>
+
+                <div class="asset-grid">
+                    <div class="asset-card">
+                        <div class="asset-visual">
+                            <img src="../assets/feed 6.webp" alt="Preset">
+                            <div class="asset-price-tag">$24</div>
+                        </div>
+                        <div class="asset-details">
+                            <div class="asset-meta">
+                                <span class="category">Lightroom Preset</span>
+                                <h3>Silk Dream v.02</h3>
+                            </div>
+                            <button class="btn-shop-add" onclick="window.location.href='./404.html'"><i
+                                    class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="asset-card">
+                        <div class="asset-visual">
+                            <img src="../assets/feed 7.webp" alt="Brush Kit">
+                            <div class="asset-price-tag">$18</div>
+                        </div>
+                        <div class="asset-details">
+                            <div class="asset-meta">
+                                <span class="category">Procreate Brushes</span>
+                                <h3>Organic Texture Pack</h3>
+                            </div>
+                            <button class="btn-shop-add" onclick="window.location.href='./404.html'"><i
+                                    class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="asset-card">
+                        <div class="asset-visual">
+                            <img src="../assets/feed 8.webp" alt="UI Kit">
+                            <div class="asset-price-tag">$45</div>
+                        </div>
+                        <div class="asset-details">
+                            <div class="asset-meta">
+                                <span class="category">Figma Template</span>
+                                <h3>Blossom UI Kit</h3>
+                            </div>
+                            <button class="btn-shop-add" onclick="window.location.href='./404.html'"><i
+                                    class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="feed.html" class="f-logo">
+                    <img src="../assets/white.webp" alt="logo" width="150px">
+                </a>
+                <p>Redefining digital influence through minimalist aesthetics and powerful social tools.</p>
+                <form class="newsletter-box" action="./404.html" method="GET">
+                    <input type="email" placeholder="Get weekly trends..." required>
+                    <button aria-label="Subscribe"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+
+            <div class="footer-links">
+                <div class="link-col">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="feed.html">Feed</a>
+                    <a href="post.html">Popular Posts</a>
+                    <a href="explore.html">Explore</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="link-col">
+                    <h4>Platform</h4>
+                    <a href="./404.html">Feed</a>
+                    <a href="./404.html">Trending</a>
+                    <a href="./404.html">Analytics</a>
+                    <a href="./404.html">Verification</a>
+                </div>
+                <div class="link-col">
+                    <h4>Company</h4>
+                    <a href="./404.html">About Us</a>
+                    <a href="./404.html">Careers</a>
+                    <a href="./404.html">Privacy</a>
+                    <a href="./404.html">Terms</a>
+                </div>
+                <div class="link-col">
+                    <h4>Social</h4>
+                    <div class="social-grid">
+                        <a href="./404.html" class="social-btn"><i class="fab fa-instagram"></i></a>
+                        <a href="./404.html" class="social-btn"><i class="fab fa-twitter"></i></a>
+                        <a href="./404.html" class="social-btn"><i class="fab fa-tiktok"></i></a>
+                        <a href="./404.html" class="social-btn"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Blossom Studio. Built for the next generation of creators.</p>
+        </div>
+    </footer>
+
+
+
+
+    <script src="script.js"></script>
+
+    <script>
+
+        document.querySelectorAll('.action-btn.heart').forEach(btn => {
+            btn.addEventListener('click', function () {
+                const icon = this.querySelector('i');
+                const countSpan = this.querySelector('span');
+                let count = parseFloat(countSpan.innerText);
+
+                icon.classList.toggle('fas'); // Solid heart
+                icon.classList.toggle('far'); // Outline heart
+
+                if (icon.classList.contains('fas')) {
+                    this.style.color = '#ff4d4d';
+                    countSpan.innerText = (count + 0.1).toFixed(1) + 'k';
+                    // Simple pop animation
+                    this.style.transform = 'scale(1.3)';
+                    setTimeout(() => this.style.transform = 'scale(1)', 200);
+                } else {
+                    this.style.color = '';
+                    countSpan.innerText = (count - 0.1).toFixed(1) + 'k';
+                }
+            });
+        });
+
+
+
+
+
+
+        document.querySelectorAll('.btn-follow').forEach(btn => {
+            btn.addEventListener('click', function () {
+                if (this.innerText === 'Follow') {
+                    this.innerText = 'Following';
+                    this.style.background = 'rgba(0,0,0,0.05)';
+                    this.style.color = 'var(--text-dim)';
+                } else {
+                    this.innerText = 'Follow';
+                    this.style.background = 'var(--text-main)';
+                    this.style.color = 'var(--bg-main)';
+                }
+            });
+        });
+
+
+
+
+
+
+        /* section 3 */
+
+        document.querySelectorAll('.mosaic-item').forEach(item => {
+            item.addEventListener('mousemove', (e) => {
+                const img = item.querySelector('img');
+                const rect = item.getBoundingClientRect();
+                const x = (e.clientX - rect.left) / rect.width;
+                const y = (e.clientY - rect.top) / rect.height;
+
+                img.style.transformOrigin = `${x * 100}% ${y * 100}%`;
+            });
+
+            item.addEventListener('mouseleave', () => {
+                const img = item.querySelector('img');
+                img.style.transformOrigin = 'center center';
+            });
+        });
+
+
+
+
+
+        /* section 4 */
+
+        const spotlightCards = document.querySelectorAll('.spotlight-card');
+
+        spotlightCards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                spotlightCards.forEach(c => c.classList.remove('active'));
+                card.classList.add('active');
+            });
+        });
+
+        /* section 5 */
+
+        const moodCards = document.querySelectorAll('.mood-card');
+        const ambientGlow = document.getElementById('ambient-glow');
+
+        moodCards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                const color = card.getAttribute('data-color');
+                ambientGlow.style.background = color;
+            });
+
+            card.addEventListener('mouseleave', () => {
+                ambientGlow.style.background = 'rgba(255, 94, 126, 0)';
+            });
+        });
+
+
+
+
+
+
+        /* section 6 */
+
+        document.querySelectorAll('.btn-shop-add').forEach(btn => {
+            btn.addEventListener('click', function () {
+                const icon = this.querySelector('i');
+
+                // Transform effect
+                this.style.background = 'var(--brand-primary)';
+                icon.className = 'fas fa-check';
+
+                // Pulse animation
+                this.animate([
+                    { transform: 'scale(1)' },
+                    { transform: 'scale(1.2)' },
+                    { transform: 'scale(1)' }
+                ], { duration: 300 });
+
+                // Optional: revert after 2 seconds
+                setTimeout(() => {
+                    this.style.background = 'var(--text-main)';
+                    icon.className = 'fas fa-plus';
+                }, 2000);
+            });
+        });
+
+
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 900,
+            easing: 'ease-in-out',
+            once: true,
+        });
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media</title>
+    <link rel="icon" href="../assets/bg remove.webp">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="./root.css">
+
+    <!-- material icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- aos animations -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <header class="main-header">
+        <div class="header-container">
+            <a href="contact.html" class="logo">
+                <img src="../assets/pink.webp" alt="logo" width="150px">
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="feed.html" class="nav-link">Feed</a></li>
+                    <li><a href="post.html" class="nav-link">Popular Posts</a></li>
+                    <li><a href="explore.html" class="nav-link">Explore</a></li>
+                    <li><a href="contact.html" class="btn-primary">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="hamburger" id="menu-trigger" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+
+
+
+    <main>
+
+        <section class="contact-hero">
+            <div class="contact-container">
+
+                <div class="contact-intro">
+                    <span class="badge-v18">Direct Line</span>
+                    <h1>Let’s build the <br><span class="italic-serif">Pulse</span> together.</h1>
+                    <p>Whether you’re a creator looking for a home or a brand seeking the next big aesthetic shift, our
+                        doors are always open.</p>
+
+                    <div class="contact-methods">
+                        <div class="method-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>hello@blossom.studio</span>
+                        </div>
+                        <div class="method-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>London / Tokyo / NYC</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-visual-scene">
+                    <div class="contact-glass-card" id="contact-card">
+                        <div class="card-glow"></div>
+                        <div class="card-inner">
+                            <div class="p-header">
+                                <div class="status-dot"></div>
+                                <span>Support is Live</span>
+                            </div>
+                            <h2>Start a Conversation</h2>
+                            <p>Average response time: 2 hours</p>
+
+                            <div class="mini-form">
+                                <div class="skeleton-input">Name</div>
+                                <div class="skeleton-input">Email</div>
+                                <div class="btn-fake-submit">Open Portal</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <section class="connection-portal">
+            <div class="portal-container">
+
+                <div class="portal-sidebar">
+                    <div class="sidebar-block">
+                        <span class="s-label">Digital Presence</span>
+                        <div class="social-glass-list">
+                            <a href="./404.html" class="social-glass-item">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="./404.html" class="social-glass-item">
+                                <i class="fab fa-twitter"></i>
+                                <span>Twitter / X</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="./404.html" class="social-glass-item">
+                                <i class="fab fa-discord"></i>
+                                <span>Discord Community</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-block office-hours">
+                        <span class="s-label">Availability</span>
+                        <p>Mon — Fri: 09:00 - 18:00 EST</p>
+                        <p>Weekend: Emergency Support Only</p>
+                    </div>
+                </div>
+
+                <div class="portal-form-wrap">
+                    <form id="blossom-contact-form" class="premium-form" action="./404.html" method='GET'>
+                        <div class="form-row">
+                            <div class="input-group">
+                                <label>Full Name</label>
+                                <input type="text" placeholder="e.g. Alexander Voss" pattern="[A-Za-z\s]+"
+                                    title="Only alphabets are allowed"
+                                    oninput="this.value=this.value.replace(/[^a-zA-Z\s]/g,'')" required>
+                                <div class="focus-border"></div>
+                            </div>
+                            <div class="input-group">
+                                <label>Inquiry Type</label>
+                                <select>
+                                    <option>General Inquiry</option>
+                                    <option>Partnership</option>
+                                    <option>Creator Support</option>
+                                    <option>Press</option>
+                                </select>
+                                <div class="focus-border"></div>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label>Email Address</label>
+                            <input type="email" placeholder="hello@yourvibe.com" required>
+                            <div class="focus-border"></div>
+                        </div>
+
+                        <div class="input-group">
+                            <label>Your Vision</label>
+                            <textarea rows="5" placeholder="Tell us about your project or vibe..."></textarea>
+                            <div class="focus-border"></div>
+                        </div>
+
+                        <button type="submit" class="btn-portal-submit">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <section class="partner-pulse">
+            <div class="partner-container">
+                <div class="partner-intro">
+                    <span class="badge-v21">Network Reach</span>
+                    <p>Collaborating with the world's leading creative authorities.</p>
+                </div>
+
+                <div class="logo-ticker">
+                    <div class="ticker-track">
+                        <div class="logo-item"><span>VOGUE</span></div>
+                        <div class="logo-item"><span>HYPEBEAST</span></div>
+                        <div class="logo-item"><span>WIRED</span></div>
+                        <div class="logo-item"><span>ADOBE</span></div>
+                        <div class="logo-item"><span>DESIGNBOOM</span></div>
+                        <div class="logo-item"><span>VOGUE</span></div>
+                        <div class="logo-item"><span>HYPEBEAST</span></div>
+                        <div class="logo-item"><span>WIRED</span></div>
+                        <div class="logo-item"><span>ADOBE</span></div>
+                        <div class="logo-item"><span>DESIGNBOOM</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <section class="faq-section">
+            <div class="faq-container">
+                <div class="faq-header">
+                    <span class="badge-v19">Help Center</span>
+                    <h2>Common <span class="italic-serif">Curations.</span></h2>
+                    <p>Everything you need to know about joining our elite creator circle.</p>
+                </div>
+
+                <div class="faq-grid">
+                    <div class="faq-tile">
+                        <button class="faq-trigger">
+                            <span>How do I become a Featured Creator?</span>
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="faq-content">
+                            <p>Featured spots are curated weekly by our internal aesthetic board. We look for
+                                high-fidelity visuals, consistent vibes, and community engagement. Ensure your portfolio
+                                is up to date.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-tile">
+                        <button class="faq-trigger">
+                            <span>Can I sell digital assets on Blossom?</span>
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="faq-content">
+                            <p>Yes. Our "Creator Boutique" is open to all Verified users. You can list Lightroom
+                                presets, brush kits, and UI templates directly through your dashboard with a 90/10
+                                revenue split.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-tile">
+                        <button class="faq-trigger">
+                            <span>Is there a membership fee for the Studio?</span>
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="faq-content">
+                            <p>Basic membership is free. Premium "Studio Pro" accounts offer advanced analytics, custom
+                                domain hosting, and priority placement in the discovery feed for a monthly subscription.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="support-footer">
+                    <p>Can’t find what you’re looking for? <a href="#">Talk to a Human</a></p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+        <section class="membership-cta">
+            <div class="membership-container">
+                <div class="membership-header">
+                    <span class="badge-v22">The Next Step</span>
+                    <h2>Ready to <span class="italic-serif">Bloom?</span></h2>
+                    <p>Choose your level of engagement within the Blossom ecosystem.</p>
+                </div>
+
+                <div class="tier-grid">
+                    <div class="tier-card">
+                        <div class="tier-inner">
+                            <span class="t-name">Explorer</span>
+                            <div class="t-price">$0<span>/forever</span></div>
+                            <ul class="t-features">
+                                <li><i class="fas fa-check"></i> Standard Discovery Feed</li>
+                                <li><i class="fas fa-check"></i> 5 Assets / Month</li>
+                                <li><i class="fas fa-check"></i> Global Community Access</li>
+                            </ul>
+                            <button class="btn-tier" onclick="window.location.href='./404.html'">Join Free</button>
+                        </div>
+                    </div>
+
+                    <div class="tier-card pro">
+                        <div class="pro-tag">Most Popular</div>
+                        <div class="tier-inner">
+                            <span class="t-name">Studio Pro</span>
+                            <div class="t-price">$19<span>/mo</span></div>
+                            <ul class="t-features">
+                                <li><i class="fas fa-check"></i> Priority Feed Placement</li>
+                                <li><i class="fas fa-check"></i> Unlimited Digital Shop</li>
+                                <li><i class="fas fa-check"></i> Advanced Aura Analytics</li>
+                                <li><i class="fas fa-check"></i> Custom Profile Themes</li>
+                            </ul>
+                            <button class="btn-tier active" onclick="window.location.href='./404.html'">Go Pro</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="contact.html" class="f-logo">
+                    <img src="../assets/white.webp" alt="logo" width="150px">
+                </a>
+                <p>Redefining digital influence through minimalist aesthetics and powerful social tools.</p>
+                <form class="newsletter-box" action="./404.html" method="GET">
+                    <input type="email" placeholder="Get weekly trends..." required>
+                    <button aria-label="Subscribe"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+
+            <div class="footer-links">
+                <div class="link-col">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="feed.html">Feed</a>
+                    <a href="post.html">Popular Posts</a>
+                    <a href="explore.html">Explore</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="link-col">
+                    <h4>Platform</h4>
+                    <a href="./404.html">Feed</a>
+                    <a href="./404.html">Trending</a>
+                    <a href="./404.html">Analytics</a>
+                    <a href="./404.html">Verification</a>
+                </div>
+                <div class="link-col">
+                    <h4>Company</h4>
+                    <a href="./404.html">About Us</a>
+                    <a href="./404.html">Careers</a>
+                    <a href="./404.html">Privacy</a>
+                    <a href="./404.html">Terms</a>
+                </div>
+                <div class="link-col">
+                    <h4>Social</h4>
+                    <div class="social-grid">
+                        <a href="./404.html" class="social-btn"><i class="fab fa-instagram"></i></a>
+                        <a href="./404.html" class="social-btn"><i class="fab fa-twitter"></i></a>
+                        <a href="./404.html" class="social-btn"><i class="fab fa-tiktok"></i></a>
+                        <a href="./404.html" class="social-btn"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Blossom Studio. Built for the next generation of creators.</p>
+        </div>
+    </footer>
+
+
+
+
+    <script src="script.js"></script>
+
+    <script>
+
+        const contactCard = document.getElementById('contact-card');
+
+        document.addEventListener('mousemove', (e) => {
+            const xAxis = (window.innerWidth / 2 - e.pageX) / 25;
+            const yAxis = (window.innerHeight / 2 - e.pageY) / 25;
+
+            contactCard.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+        });
+
+        // Smooth reset on leave
+        document.addEventListener('mouseleave', () => {
+            contactCard.style.transition = 'all 0.5s ease';
+            contactCard.style.transform = `rotateY(0deg) rotateX(0deg)`;
+        });
+
+        document.addEventListener('mouseenter', () => {
+            contactCard.style.transition = 'none';
+        });
+
+
+
+
+
+
+        // section 2
+        const contactForm = document.getElementById('blossom-contact-form');
+
+        contactForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const btn = this.querySelector('.btn-portal-submit');
+            const originalText = btn.innerHTML;
+
+            btn.innerHTML = '<span>Message Sent</span> <i class="fas fa-check"></i>';
+            btn.style.background = '#10b981'; // Success Green
+
+            setTimeout(() => {
+                contactForm.reset(); // clears form
+
+                window.location.href = "./404.html";
+            }, 1000);
+        });
+
+
+
+
+
+        // section 3
+
+        document.querySelectorAll('.faq-trigger').forEach(trigger => {
+            trigger.addEventListener('click', () => {
+                const parent = trigger.parentElement;
+
+                // Close other open tiles
+                document.querySelectorAll('.faq-tile').forEach(tile => {
+                    if (tile !== parent) tile.classList.remove('active');
+                });
+
+                // Toggle current tile
+                parent.classList.toggle('active');
+            });
+        });
+
+
+
+
+
+        // section 4
+
+        const tickerTrack = document.querySelector('.ticker-track');
+
+        tickerTrack.addEventListener('mouseenter', () => {
+            tickerTrack.style.animationPlayState = 'paused';
+        });
+
+        tickerTrack.addEventListener('mouseleave', () => {
+            tickerTrack.style.animationPlayState = 'running';
+        });
+
+
+
+
+
+
+        // section 5
+
+        const proCard = document.querySelector('.tier-card.pro');
+
+        proCard.addEventListener('mousemove', (e) => {
+            const rect = proCard.getBoundingClientRect();
+            const x = (e.clientX - rect.left) / rect.width;
+            const y = (e.clientY - rect.top) / rect.height;
+
+            proCard.style.boxShadow = `${(x - 0.5) * 40}px ${(y - 0.5) * 40}px 100px rgba(255, 94, 126, 0.2)`;
+        });
+
+        proCard.addEventListener('mouseleave', () => {
+            proCard.style.boxShadow = '0 40px 100px rgba(0,0,0,0.03)';
+        });
+
+
+
+
+
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 900,
+            easing: 'ease-in-out',
+            once: true,
+        });
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media</title>
+    <link rel="icon" href="../assets/bg remove.webp">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="post.css">
+    <link rel="stylesheet" href="./root.css">
+
+    <!-- material icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- aos animations -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <header class="main-header">
+        <div class="header-container">
+            <a href="post.html" class="logo">
+                <img src="../assets/pink.webp" alt="logo" width="150px">
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="feed.html" class="nav-link">Feed</a></li>
+                    <li><a href="post.html" class="nav-link">Popular Posts</a></li>
+                    <li><a href="explore.html" class="nav-link">Explore</a></li>
+                    <li><a href="contact.html" class="btn-primary">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="hamburger" id="menu-trigger" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+
+
+
+    <main>
+
+        <section class="popular-hero">
+            <div class="popular-container">
+
+                <div class="popular-info">
+                    <div class="trend-badge">
+                        <i class="fas fa-fire"></i> Trending Worldwide
+                    </div>
+                    <h1>The <span class="italic-serif">Pulse</span> <br>of the Moment.</h1>
+                    <p>Discover the most engaged moments across the Blossom network. Hand-picked by the community,
+                        curated by aesthetics.</p>
+
+                    <div class="filter-pills">
+                        <button class="pill active" onclick="window.location.href='./404.html'">All Time</button>
+                        <button class="pill" onclick="window.location.href='./404.html'">Today</button>
+                        <button class="pill" onclick="window.location.href='./404.html'">This Week</button>
+                    </div>
+                </div>
+
+                <div class="gravity-scene">
+                    <div class="gravity-card" id="gravity-card">
+                        <div class="card-inner">
+                            <img src="../assets/f1-testi.webp"
+                                alt="Top Post">
+                            <div class="card-glass-footer">
+                                <div class="c-user">
+                                    <img src="../assets/f3-testi.webp" alt="User">
+                                    <span>@vogue_minimal</span>
+                                </div>
+                                <div class="c-stats">
+                                    <i class="fas fa-heart"></i> 142k
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gravity-glow"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+        <section class="popular-grid-section">
+            <div class="popular-grid-container">
+
+                <div class="popular-item rank-01">
+                    <div class="rank-badge">01</div>
+                    <div class="item-visual">
+                        <img src="../assets/organic.webp" alt="Product">
+                        <div class="item-overlay">
+                            <div class="item-creator">
+                                <img src="../assets/m3-testi.webp" alt="User">
+                                <span>@minimal_studio</span>
+                            </div>
+                            <h3>Organic Form Study</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popular-item rank-02">
+                    <div class="rank-badge">02</div>
+                    <div class="item-visual">
+                        <img src="../assets/summer.webp" alt="Fashion">
+                        <div class="item-overlay">
+                            <h3>Summer Drift</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popular-item rank-03">
+                    <div class="rank-badge">03</div>
+                    <div class="item-visual">
+                        <img src="../assets/bolg4.webp" alt="Street">
+                        <div class="item-overlay">
+                            <h3>Neon Softness</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+        <section class="bubble-section">
+            <div class="bubble-container">
+                <div class="bubble-header">
+                    <span class="badge-v9">Live Pulse</span>
+                    <h2>What's <span class="italic-serif">Atmospheric</span> Now.</h2>
+                </div>
+
+                <div class="bubble-wall">
+                    <div class="mood-bubble b-lg" style="--bg-glow: #ff5e7e;">
+                        <div class="bubble-inner">
+                            <span class="b-topic">#Minimalism</span>
+                            <div class="b-stats">
+                                <strong>14.2k</strong>
+                                <span>Posts</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mood-bubble b-md" style="--bg-glow: #7c3aed;">
+                        <div class="bubble-inner">
+                            <span class="b-topic">#Luxe</span>
+                            <div class="b-stats">
+                                <strong>8.4k</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mood-bubble b-sm" style="--bg-glow: #22d3ee;">
+                        <div class="bubble-inner">
+                            <span class="b-topic">#Aura</span>
+                            <div class="b-stats">
+                                <strong>5.1k</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mood-bubble b-md" style="--bg-glow: #f59e0b;">
+                        <div class="bubble-inner">
+                            <span class="b-topic">#VibeCheck</span>
+                            <div class="b-stats">
+                                <strong>11.9k</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+        <section class="prestige-section">
+            <div class="prestige-container">
+                <div class="prestige-header">
+                    <span class="badge-v10">Top Tier</span>
+                    <h2>The <span class="italic-serif">Elite</span> Collective</h2>
+                </div>
+
+                <div class="podium-wrap">
+                    <div class="podium-item silver">
+                        <div class="p-avatar">
+                            <img src="../assets/sign.webp" alt="Rank 2">
+                            <div class="p-rank">2</div>
+                        </div>
+                        <h3>Lukas V.</h3>
+                        <span>@lukas_visuals</span>
+                        <div class="p-pillar"></div>
+                    </div>
+
+                    <div class="podium-item gold">
+                        <div class="p-avatar">
+                            <img src="../assets/w4.webp" alt="Rank 1">
+                            <div class="p-rank">1</div>
+                            <div class="p-crown"><i class="fas fa-crown"></i></div>
+                        </div>
+                        <h3>Anya Rose</h3>
+                        <span>@anya_blossom</span>
+                        <div class="p-pillar"></div>
+                    </div>
+
+                    <div class="podium-item bronze">
+                        <div class="p-avatar">
+                            <img src="../assets/blog2.webp" alt="Rank 3">
+                            <div class="p-rank">3</div>
+                        </div>
+                        <h3>Dorian Grey</h3>
+                        <span>@dorian_studio</span>
+                        <div class="p-pillar"></div>
+                    </div>
+                </div>
+
+                <div class="prestige-list">
+                    <div class="list-item">
+                        <span class="l-rank">04</span>
+                        <img src="../assets/w3.webp" alt="Creator">
+                        <div class="l-info">
+                            <strong>Sienna Miller</strong>
+                            <span>Trendsetter</span>
+                        </div>
+                        <div class="l-stats">1.2M Score</div>
+                    </div>
+                    <div class="list-item">
+                        <span class="l-rank">05</span>
+                        <img src="../assets/feed 4.webp" alt="Creator">
+                        <div class="l-info">
+                            <strong>Felix Kang</strong>
+                            <span>Tech Curator</span>
+                        </div>
+                        <div class="l-stats">980k Score</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+        <section class="audio-section">
+            <div class="audio-container">
+                <div class="audio-header">
+                    <span class="badge-v11">Sonic Pulse</span>
+                    <h2>Sounds of <span class="italic-serif">Summer.</span></h2>
+                    <p>The most used audio tracks across the Blossom network this week.</p>
+                </div>
+
+                <div class="audio-track-wrapper">
+                    <div class="audio-card">
+                        <div class="audio-visual">
+                            <img src="../assets/blog1.webp" alt="Cover">
+                            <div class="play-overlay"><i class="fas fa-play"></i></div>
+                            <div class="visualizer">
+                                <span></span><span></span><span></span><span></span><span></span>
+                            </div>
+                        </div>
+                        <div class="audio-info">
+                            <h3>Velvet Horizon</h3>
+                            <span>Lofi - 1.2M Uses</span>
+                        </div>
+                        <button class="btn-use-audio" onclick="window.location.href='./404.html'">Use Sound</button>
+                    </div>
+
+                    <div class="audio-card">
+                        <div class="audio-visual">
+                            <img src="../assets/img 3.webp" alt="Cover">
+                            <div class="play-overlay"><i class="fas fa-play"></i></div>
+                            <div class="visualizer">
+                                <span></span><span></span><span></span><span></span><span></span>
+                            </div>
+                        </div>
+                        <div class="audio-info">
+                            <h3>Golden Hour Echo</h3>
+                            <span>Acoustic - 840k Uses</span>
+                        </div>
+                        <button class="btn-use-audio" onclick="window.location.href='./404.html'">Use Sound</button>
+                    </div>
+
+                    <div class="audio-card">
+                        <div class="audio-visual">
+                            <img src="../assets/1.webp" alt="Cover">
+                            <div class="play-overlay"><i class="fas fa-play"></i></div>
+                            <div class="visualizer">
+                                <span></span><span></span><span></span><span></span><span></span>
+                            </div>
+                        </div>
+                        <div class="audio-info">
+                            <h3>Midnight Bloom</h3>
+                            <span>Synth - 2.5M Uses</span>
+                        </div>
+                        <button class="btn-use-audio" onclick="window.location.href='./404.html'">Use Sound</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+        <section class="trends-map-section">
+            <div class="map-container">
+                <div class="map-header">
+                    <span class="badge-v12">Live Network</span>
+                    <h2>Global <span class="italic-serif">Velocity.</span></h2>
+                    <p>Real-time activity heatmaps across major creative hubs.</p>
+                </div>
+
+                <div class="map-visual-wrap">
+                    <div class="map-svg-bg">
+                        <div class="hotspot london" data-city="London">
+                            <div class="pulse"></div>
+                            <div class="city-tag">Trending: Minimalist Architecture</div>
+                        </div>
+                        <div class="hotspot tokyo" data-city="Tokyo">
+                            <div class="pulse"></div>
+                            <div class="city-tag">Trending: Cyber-Aesthetic</div>
+                        </div>
+                        <div class="hotspot nyc" data-city="New York">
+                            <div class="pulse"></div>
+                            <div class="city-tag">Trending: Street Editorial</div>
+                        </div>
+                    </div>
+
+                    <div class="map-stats-tray">
+                        <div class="m-stat">
+                            <strong>2.4M</strong>
+                            <span>Active Now</span>
+                        </div>
+                        <div class="m-stat">
+                            <strong>+18%</strong>
+                            <span>Growth Spike</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+
+
+
+
+
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="post.html" class="f-logo">
+                    <img src="../assets/white.webp" alt="logo" width="150px">
+                </a>
+                <p>Redefining digital influence through minimalist aesthetics and powerful social tools.</p>
+                <form class="newsletter-box" action="./404.html" method="GET">
+                    <input type="email" placeholder="Get weekly trends..." required>
+                    <button aria-label="Subscribe"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+
+            <div class="footer-links">
+                <div class="link-col">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="feed.html">Feed</a>
+                    <a href="post.html">Popular Posts</a>
+                    <a href="explore.html">Explore</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="link-col">
+                    <h4>Platform</h4>
+                    <a href="./404.html">Feed</a>
+                    <a href="./404.html">Trending</a>
+                    <a href="./404.html">Analytics</a>
+                    <a href="./404.html">Verification</a>
+                </div>
+                <div class="link-col">
+                    <h4>Company</h4>
+                    <a href="./404.html">About Us</a>
+                    <a href="./404.html">Careers</a>
+                    <a href="./404.html">Privacy</a>
+                    <a href="./404.html">Terms</a>
+                </div>
+                <div class="link-col">
+                    <h4>Social</h4>
+                    <div class="social-grid">
+                        <a href="./404.html" class="social-btn"><i class="fab fa-instagram"></i></a>
+                        <a href="./404.html" class="social-btn"><i class="fab fa-twitter"></i></a>
+                        <a href="./404.html" class="social-btn"><i class="fab fa-tiktok"></i></a>
+                        <a href="./404.html" class="social-btn"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Blossom Studio. Built for the next generation of creators.</p>
+        </div>
+    </footer>
+
+
+
+
+    <script src="script.js"></script>
+
+    <script>
+
+        const card = document.getElementById('gravity-card');
+        const container = document.querySelector('.gravity-scene');
+
+        container.addEventListener('mousemove', (e) => {
+            const xAxis = (window.innerWidth / 2 - e.pageX) / 20;
+            const yAxis = (window.innerHeight / 2 - e.pageY) / 20;
+
+            card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+        });
+
+        container.addEventListener('mouseenter', () => {
+            card.style.transition = 'none';
+        });
+
+        container.addEventListener('mouseleave', () => {
+            card.style.transition = 'all 0.5s ease';
+            card.style.transform = `rotateY(0deg) rotateX(0deg)`;
+        });
+
+
+
+
+
+
+        /* section 2 */
+
+        const popularItems = document.querySelectorAll('.popular-item');
+
+        const gridObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }, index * 100);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        popularItems.forEach(item => {
+            item.style.opacity = '0';
+            item.style.transform = 'translateY(40px)';
+            gridObserver.observe(item);
+        });
+
+
+
+
+
+        /* section 3 */
+
+        document.querySelectorAll('.mood-bubble').forEach(bubble => {
+            bubble.addEventListener('mousemove', (e) => {
+                const rect = bubble.getBoundingClientRect();
+                const x = (e.clientX - rect.left - rect.width / 2) * 0.2;
+                const y = (e.clientY - rect.top - rect.height / 2) * 0.2;
+                bubble.style.transform = `translate(${x}px, ${y}px) scale(1.1)`;
+            });
+
+            bubble.addEventListener('mouseleave', () => {
+                bubble.style.transform = `translate(0px, 0px) scale(1)`;
+            });
+        });
+
+
+
+
+
+        /* section 4 */
+
+        const pillars = document.querySelectorAll('.p-pillar');
+
+        const pillarObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.transition = 'height 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+                    // The height is defined in CSS, we just trigger a refresh
+                    entry.target.style.opacity = '1';
+                }
+            });
+        }, { threshold: 0.5 });
+
+        pillars.forEach(p => {
+            p.style.opacity = '0';
+            pillarObserver.observe(p);
+        });
+
+
+
+
+
+
+        /* section 5 */
+
+        document.querySelectorAll('.audio-card').forEach(card => {
+            const playBtn = card.querySelector('.play-overlay');
+            const visualizerSpans = card.querySelectorAll('.visualizer span');
+
+            playBtn.addEventListener('click', () => {
+                const icon = playBtn.querySelector('i');
+                icon.classList.toggle('fa-play');
+                icon.classList.toggle('fa-pause');
+
+                visualizerSpans.forEach(span => {
+                    span.style.animationDuration = icon.classList.contains('fa-pause') ? '0.3s' : '0.6s';
+                });
+            });
+        });
+
+
+
+
+
+
+
+        /* section 6 */
+
+        const stats = document.querySelectorAll('.m-stat strong');
+
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Simple fade in for the stats tray
+                    entry.target.parentElement.style.opacity = '1';
+                    entry.target.parentElement.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.5 });
+
+        stats.forEach(s => {
+            s.parentElement.style.opacity = '0';
+            s.parentElement.style.transform = 'translateY(20px)';
+            s.parentElement.style.transition = '1s ease-out';
+            statsObserver.observe(s);
+        });
+
+
+
+
+
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 900,
+            easing: 'ease-in-out',
+            once: true,
+        });
+    </script>
+
+
+</body>
+
+</html>
