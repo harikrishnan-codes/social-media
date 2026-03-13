@@ -11,13 +11,13 @@
 .dropdown-arrow {
     cursor: pointer;
     font-size: 12px;
+    color: var(--brand-primary);
 }
 
 .dropdown-menu {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: white;
     list-style: none;
     min-width: 180px;
     display: none;
@@ -28,10 +28,13 @@
     padding: 10px 20px;
     text-decoration: none;
     color: black;
+    background-color:var(--brand-primary);
+    border-radius: 100px;
+    font-weight:bold;
 }
 
 .dropdown-menu li a:hover {
-    background-color: var(--bg-dark);
+    background-color: #cfef00;
 }
 
 .dropdown.show .dropdown-menu {
@@ -58,6 +61,8 @@
     .dropdown-menu li a {
         color: white;
         padding: 12px 15px;
+        border-radius: 100px;
+        display: inline-block;
     }
 
 }
@@ -215,7 +220,7 @@
     }
 
     .hero-visual {
-        order: -1;
+        order: 2;
     }
 
     .glass-card {
@@ -776,6 +781,12 @@
     transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
     transform-style: preserve-3d;
     cursor: pointer;
+        pointer-events: none;
+
+}
+
+.pricing-card-3d .card-inner{
+    pointer-events: auto;
 }
 
 .card-inner {
@@ -787,6 +798,7 @@
     position: relative;
     transition: all 0.5s ease;
     overflow: hidden;
+    z-index: 20;
 }
 
 .pricing-card-3d:hover {

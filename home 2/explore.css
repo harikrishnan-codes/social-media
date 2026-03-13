@@ -326,7 +326,7 @@
  }
 
  .cloud-container {
-     max-width: 1200px;
+     max-width: 1400px;
      margin: 0 auto;
  }
 
@@ -340,7 +340,7 @@
      flex-wrap: wrap;
      justify-content: center;
      gap: 20px;
-     perspective: 1000px;
+     perspective: 100px;
  }
 
  .search-pill {
